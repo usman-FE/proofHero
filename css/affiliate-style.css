@@ -294,7 +294,7 @@ main .mainContent .invitePeople .inviteInput .searchInput {
   border: 0;
   padding: 0.495rem 0.75rem;
   border-radius: 0.49rem;
-  background-color: #f0f2f6;
+  background-color: #f1f1f1;
   font-weight: 500;
 }
 
@@ -412,5 +412,10 @@ main .invitePeople .referralBtn a:hover {
 
   main .mainContent .withdraw .withdrawFlex .wannaBtn {
     margin-top: 1rem;
+  }
+
+  .mob-stat {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 1rem;
   }
 }
