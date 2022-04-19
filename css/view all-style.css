@@ -320,6 +320,9 @@ main .mainContent .table .checkInput:checked {
   width: 2.4rem;
   cursor: pointer;
 }
+main .mainContent .table .checkInput:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%) !important;
+}
 main .mainContent .campaignsBox .createBtn:hover {
   background-color: #b50f15;
   border-color: #b50f15;

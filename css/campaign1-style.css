@@ -1046,8 +1046,8 @@ main .mainContent .text {
 }
 
 .modalBox .modalCopyBtn:hover {
-  background-color: white;
-  color: #d82128 !important;
+  background-color: #b50f15;
+  border-color: #b50f15;
 }
 
 .modalBox .mt {
