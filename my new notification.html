@@ -16,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/my new notification-style.css" />
+    <script defer src="js/app.js"></script>
     <title>Document</title>
   </head>
 
@@ -37,6 +38,30 @@
             <span></span>
             <span></span>
           </button>
+
+          <ul class="dropdown-menu dropdownMenu mob-nav">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-user-check"></i>Admin</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-question"></i>Help center</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+              >
+            </li>
+          </ul>
+
           <div class="collapse navbar-collapse">
             <div class="navbarTop">
               <ul class="navbar-nav navbarNav">
@@ -218,7 +243,10 @@
                           <h5 class="campaignText">My new notification</h5>
                           <div class="flexText">
                             <p class="domainText">domain.com</p>
-                            <p class="domainText ms">Request Collector</p>
+                            <p class="domainText ms">
+                              <i class="fa-solid fa-info info-icon"></i>
+                              Informational
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -386,8 +414,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row d-md-none d-block">
-                      <div class="col-lg-12">
+                    <div class="row d-md-none d-block accordion-header">
+                      <div class="col-lg-12 accordion-header-border">
                         <div class="accordionTopBtn">
                           <div class="accordionBtn">
                             <h2 class="accordion-header" id="headingOne">
@@ -2455,16 +2483,16 @@
                   <div class="col-lg-12">
                     <div>
                       <div class="row align-items-center">
-                        <div class="col-md-4">
+                        <div class="col-md-4 data-heading">
                           <div class="statisticsText">
-                            <h5>Statistics</h5>
+                            <h5>Data</h5>
+                          </div>
+                          <div>
+                            <a href="" class="jsonText">Export to JSON</a>
                           </div>
                         </div>
                         <div class="col-md-8">
                           <div class="dataTopText">
-                            <div>
-                              <a href="" class="jsonText">Export to JSON</a>
-                            </div>
                             <div class="w100">
                               <a href="" class="btn importBtn">+ Import data</a>
                             </div>

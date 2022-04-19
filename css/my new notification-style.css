@@ -109,8 +109,8 @@ header nav .navbar-collapse .navbarRight .fa-chevron-down {
 }
 
 header nav .dropdownList .dropdownMenu {
-  box-shadow: 0px 5px 10px #eaeaea;
-  border: 3px solid #d8d8d8;
+  box-shadow: 5px 6px 5px #0000004a;
+  border: 1px solid #d8d8d8;
   left: 6%;
   overflow: hidden;
   border-radius: 20px;
@@ -459,8 +459,7 @@ main .mainContent .accordionButton {
   background: unset;
   box-shadow: none;
   font-weight: 600;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding: 0.6rem 2rem;
   border-radius: 0;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -638,10 +637,12 @@ main .mainContent .accordionBody .previewText {
 }
 
 main .mainContent .previewsTop .previewText,
-main .mainContent .previewsTop .previewPara,
 main .mainContent .formTab .previewText,
 main .mainContent .accordionBody .previewText {
   color: black;
+}
+main .mainContent .previewsTop .previewPara {
+  color: #717273;
 }
 
 main .mainContent .previewsTop .previewPara,
@@ -734,6 +735,11 @@ main .mainContent .formTab p,
   padding-top: 0.7rem;
   opacity: 0.5;
   background-image: unset;
+  pointer-events: none !important;
+}
+
+.info-icon {
+  margin-right: 0.3rem;
 }
 
 .alertBottom .btnCLose i {
@@ -1084,9 +1090,15 @@ main .mainContent .dataTopText {
   align-items: center;
   justify-content: space-between;
 }
-main .mainContent .dataTopText .jsonText {
+main .mainContent .jsonText {
   text-decoration: none;
   color: #d82128;
+  font-weight: 500;
+}
+
+.data-heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 main .mainContent .accordionTopBtn {
@@ -1163,6 +1175,33 @@ main .mainContent .chevronRight {
   display: none;
 }
 @media (max-width: 992px) {
+  .mob-nav {
+    right: 2%;
+    top: 50%;
+    box-shadow: 5px 6px 5px #0000004a;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .mob-nav-show {
+    display: block !important;
+  }
+
+  .mob-nav li {
+    margin: 0.1rem 0;
+  }
+
+  .mob-nav li a i {
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7rem;
+  }
+
+  .mob-nav li a {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
   header nav {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -1225,9 +1264,10 @@ main .mainContent .chevronRight {
   .alertBottom,
   .accordionBody .alertBottom {
     margin: unset;
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin: 0 auto;
   }
 
   main .mainContent .previewsTop .textCenter {
@@ -1249,9 +1289,17 @@ main .mainContent .chevronRight {
     display: block;
     margin-left: 0.3rem;
   }
+  .accordionTopBtn {
+    overflow-x: scroll;
+  }
   main .mainContent {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .data-heading {
+    align-items: flex-start;
+    margin-bottom: 1rem;
   }
 
   main .mainContent .tabPane .campaignsText {
@@ -1272,24 +1320,24 @@ main .mainContent .chevronRight {
   main .mainContent .formBg {
     background-color: unset;
   }
-  main .mainContent .navTabs .tabsBtn,
+  /* main .mainContent .navTabs .tabsBtn,
   main .mainContent .accordionButton {
     background-color: #e4e5ea;
     border: 3px solid transparent;
     border-radius: 0.5rem;
-  }
+  } */
 
   main .mainContent .navTabs .tabsBtn,
   main .mainContent .accordionButtonmain,
   main .mainContent .accordionBtn {
     width: 100% !important;
   }
-  main .mainContent .navTabs .tabsBtn.active,
+  /* main .mainContent .navTabs .tabsBtn.active,
   main .mainContent .accordionButton:not(.collapsed) {
     background-color: white;
     border-color: #d82128;
     margin-bottom: 0.3rem;
-  }
+  } */
   main .mainContent .navTabs .tabsBtn.active .chevronRight,
   main .mainContent .accordionButton:not(.collapsed) .chevronRight {
     display: block;
@@ -1298,9 +1346,28 @@ main .mainContent .chevronRight {
   main .mainContent .accordionButton:not(.collapsed)::before {
     content: none;
   }
-  main .mainContent .accordionTopBtn {
+  /* main .mainContent .accordionTopBtn {
     flex-direction: column;
+  } */
+
+  .chevronRight {
+    display: none !important;
   }
+
+  .accordion-header {
+    padding-top: 1rem;
+  }
+
+  .accordion-header-border {
+    border-top: 1px solid #f0f2f6;
+  }
+
+  main .mainContent .accordionButton {
+    min-width: 9rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   main .mainContent .chevronRight {
     display: none;
   }
@@ -1313,7 +1380,6 @@ main .mainContent .chevronRight {
   main .mainContent .previewsTop {
     border-radius: 0;
     margin: 0;
-    margin-bottom: 1.2rem;
   }
 }
 
