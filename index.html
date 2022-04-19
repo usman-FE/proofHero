@@ -16,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="js/app.js"></script>
     <title>Document</title>
   </head>
 
@@ -37,6 +38,29 @@
             <span></span>
             <span></span>
           </button>
+          <ul class="dropdown-menu dropdownMenu mob-nav">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-user-check"></i>Admin</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-question"></i>Help center</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+              >
+            </li>
+          </ul>
+
           <div class="collapse navbar-collapse">
             <div class="navbarTop">
               <ul class="navbar-nav navbarNav">
@@ -199,7 +223,7 @@
                 <div class="freePlanBox">
                   <div class="row g-4">
                     <div class="col-lg-4">
-                      <div class="grayBg">
+                      <div class="grayBg click">
                         <div class="grayBgText">
                           <div class="icon">
                             <i class="fa-solid fa-align-justify"></i>
@@ -225,7 +249,7 @@
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="grayBg">
+                      <div class="grayBg click">
                         <div class="grayBgText">
                           <div class="icon">
                             <i class="fa-regular fa-eye"></i>
@@ -271,9 +295,11 @@
                     <table class="table mb-0 table-hover">
                       <thead>
                         <tr>
-                          <th scope="col">Campaigns</th>
-                          <th scope="col">Status</th>
-                          <th scope="col" class="dNone">Launched on</th>
+                          <th scope="col" class="col-name">Campaigns</th>
+                          <th scope="col" class="col-name">Status</th>
+                          <th scope="col" class="dNone col-name">
+                            Launched on
+                          </th>
                           <th scope="col"></th>
                         </tr>
                       </thead>
@@ -351,6 +377,11 @@
                                 <li>
                                   <a class="dropdown-item" href="#"
                                     >Custom Branding</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Duplicate</a
                                   >
                                 </li>
                                 <li>
@@ -441,6 +472,11 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="#"
+                                    >Duplicate</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
                                     ><i class="fa-solid fa-xmark"></i>Delete</a
                                   >
                                 </li>
@@ -468,10 +504,10 @@
                       <table class="table mb-0 table-hover">
                         <thead>
                           <tr>
-                            <th scope="col">Notifications</th>
-                            <th scope="col">Status</th>
-                            <th scope="col" class="dNone">Trigger</th>
-                            <th scope="col" class="dNone">Duration</th>
+                            <th scope="col" class="col-name">Notifications</th>
+                            <th scope="col" class="col-name">Status</th>
+                            <th scope="col" class="dNone col-name">Trigger</th>
+                            <th scope="col" class="dNone col-name">Duration</th>
                             <th scope="col"></th>
                           </tr>
                         </thead>
@@ -547,6 +583,11 @@
                                   <li>
                                     <a class="dropdown-item" href="#"
                                       >Custom Branding</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Duplicate</a
                                     >
                                   </li>
                                   <li>
@@ -627,6 +668,11 @@
                                     <a class="dropdown-item" href="#"
                                       ><i class="fa-solid fa-code"></i>Install
                                       Pixel</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Duplicate</a
                                     >
                                   </li>
                                   <li>
