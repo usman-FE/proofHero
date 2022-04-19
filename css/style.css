@@ -635,6 +635,11 @@ main .mainContent .table .tableNotifications .notification {
   font-weight: 600;
   font-size: 1.1rem;
   color: rgb(216, 33, 40);
+
+  min-width: 107px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main .mainContent .table .checkInput {

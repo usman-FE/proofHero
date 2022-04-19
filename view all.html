@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer src="js/app.js"></script>
     <link rel="stylesheet" href="./css/view all-style.css" />
     <title>Document</title>
   </head>
@@ -37,6 +38,30 @@
             <span></span>
             <span></span>
           </button>
+
+          <ul class="dropdown-menu dropdownMenu mob-nav">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-user-check"></i>Admin</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-question"></i>Help center</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+              >
+            </li>
+          </ul>
+
           <div class="collapse navbar-collapse">
             <div class="navbarTop">
               <ul class="navbar-nav navbarNav">
@@ -178,7 +203,7 @@
                 <div class="campaignsBox">
                   <div class="col-lg-12">
                     <div class="row marginBottom align-items-center">
-                      <div class="col-md-6">
+                      <div class="col-md-6 align-self-end">
                         <div class="campaignsText">
                           <h5>Campaigns</h5>
                         </div>
@@ -244,7 +269,7 @@
                               data-bs-toggle="modal"
                               href="#exampleModalToggle"
                               role="button"
-                              >+ create notifications</a
+                              >+ Create campaign</a
                             >
                           </div>
                           <div class="filterBtnRight dropdown">
@@ -307,10 +332,14 @@
                       <table class="table mb-0 table-hover">
                         <thead>
                           <tr>
-                            <th scope="col">Campaigns</th>
-                            <th scope="col">Status</th>
-                            <th scope="col" class="dNone">Trigger</th>
-                            <th scope="col" class="dNone">Duration</th>
+                            <th scope="col" class="tab-heading">Campaigns</th>
+                            <th scope="col" class="tab-heading">Status</th>
+                            <th scope="col" class="dNone tab-heading">
+                              Trigger
+                            </th>
+                            <th scope="col" class="dNone tab-heading">
+                              Duration
+                            </th>
                             <th scope="col"></th>
                           </tr>
                         </thead>
