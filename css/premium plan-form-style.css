@@ -534,8 +534,8 @@ main .mainContent .tabContent .payNowBtn {
 }
 
 main .mainContent .tabContent .payNowBtn:hover {
-  color: #d82128;
-  background-color: white;
+  border-color: #b50f15;
+  background-color: #b50f15;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 

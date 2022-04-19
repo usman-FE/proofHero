@@ -132,8 +132,8 @@ button:focus,
 }
 
 .logInForm form .logInBtn button:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 

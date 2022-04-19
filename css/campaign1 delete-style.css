@@ -393,8 +393,8 @@ main .mainContent .textEnd {
   justify-content: flex-end;
 }
 main .campaignsBox .createBtn:hover {
-  background-color: white;
-  color: #d82128 !important;
+  background-color: #b50f15;
+  border-color: #b50f15;
 }
 
 main .mainContent .campaignsBox .filterBtn {

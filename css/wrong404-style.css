@@ -78,9 +78,8 @@ button:focus,
   transition: all 0.25s ease;
 }
 .pageContent .homeBtn:hover {
-  color: #d82128;
-  background-color: white;
-  border-color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
 }
 .pageContent .helpCenterText {
   color: #d82128;

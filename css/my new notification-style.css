@@ -961,8 +961,8 @@ main .mainContent .dataTopText .importBtn {
 }
 
 main .mainContent .dataTopText .importBtn:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
@@ -1065,8 +1065,8 @@ main .mainContent .formTab .updateBtn,
 main .mainContent .basicForm .updateBtn:hover,
 main .mainContent .formTab .updateBtn:hover,
 .accordionBody .updateBtn:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
 }
 main .mainContent .basicForm .pt,
 main .mainContent .formTab .pt,

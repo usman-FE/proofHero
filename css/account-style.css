@@ -336,8 +336,8 @@ main .mainContent .accountForm .updateBtn {
   transition: all 0.25s ease-out;
 }
 main .mainContent .accountForm .updateBtn:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
 }
 main .mainContent .topBox .ahsanImageText {
   display: flex;

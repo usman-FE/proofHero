@@ -321,8 +321,8 @@ main .mainContent .table .checkInput:checked {
   cursor: pointer;
 }
 main .mainContent .campaignsBox .createBtn:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #b50f15;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 main .mainContent .campaignsBox .filterBtn {

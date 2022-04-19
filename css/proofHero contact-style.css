@@ -120,8 +120,8 @@ button:focus,
   transition: all 0.25s ease-out;
 }
 #contactProofHero .submitBtn:hover {
-  background-color: white;
-  color: #d82128;
+  background-color: #b50f15;
+  border-color: #d82128;
 }
 #contactProofHero .messageDelivered {
   color: #3bb273;
