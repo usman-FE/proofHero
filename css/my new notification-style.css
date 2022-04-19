@@ -1,0 +1,1350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  padding-right: 0 !important;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+main .mainContent input:focus,
+main .mainContent select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%);
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 1rem !important;
+  padding-bottom: 0;
+  box-shadow: 0px 2px 0px 0px #e4e4e4;
+  background-color: #ffffff;
+}
+
+header nav .logo {
+  width: 150px;
+}
+
+header nav .navbar-collapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+
+header nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user,
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  background-color: #f1f1f1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarRight span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999090;
+}
+
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.1rem;
+}
+
+header nav .dropdownList .dropdownMenu {
+  box-shadow: 0px 5px 10px #eaeaea;
+  border: 3px solid #d8d8d8;
+  left: 6%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header nav .dropdownList .dropdownMenu li {
+  margin: 0.1rem 0;
+}
+
+header nav .dropdownList .dropdownMenu li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+header nav .dropdownList .dropdownMenu li a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav {
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #e4e6eb;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarTop {
+  display: none;
+}
+
+header nav .navbar-collapse .navbarNav li {
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav li a {
+  color: #717273;
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a.active {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover::before,
+header nav .navbar-collapse .navbarNav li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main .content {
+  display: flex;
+}
+
+main aside .leftSideBar {
+  width: 100px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 90px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover {
+  width: 200px;
+}
+
+main aside .leftSideBar span {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover span {
+  opacity: 1;
+  display: inline;
+}
+
+main aside .leftSideBar ul {
+  padding: 0;
+  margin: 0;
+}
+
+main aside .leftSideBar ul li {
+  list-style: none;
+  margin-left: 34px;
+  position: relative;
+}
+
+main aside .leftSideBar ul li a {
+  color: #717273;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  height: 70px;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a i {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+}
+
+main aside .leftSideBar ul li a::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -11px;
+  width: 4px;
+  border-radius: 20px;
+  height: 100%;
+  opacity: 0;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a.active::before,
+main aside .leftSideBar ul li a:hover::before {
+  opacity: 1;
+}
+
+main aside .leftSideBar ul li a.active,
+main aside .leftSideBar ul li a:hover {
+  color: #d82128;
+}
+
+main .mainContent {
+  width: 100%;
+  margin-top: calc(90px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .topText {
+  margin-bottom: 1.5rem;
+}
+
+main .mainContent .topText ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .topText ul li {
+  list-style: none;
+  margin: 0 0.8rem;
+}
+
+main .mainContent .topText ul li:first-child {
+  margin-left: 0;
+}
+
+main .mainContent .topText ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+main .mainContent .topText ul li i,
+main .mainContent .topText ul li a,
+main .mainContent .notification .domainText {
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+
+main .mainContent .notification .domainText {
+  margin-top: 0.7rem;
+}
+
+main .mainContent .notification .domainText.ms {
+  margin-left: 1.4rem;
+}
+
+main .mainContent .topText ul li a:hover,
+main .mainContent ul li a.active {
+  color: black;
+}
+
+main .mainContent .alertBgColor {
+  background-color: #cbdfed;
+  border: 1px solid #cbdfed;
+  color: #8f8f8f;
+  border-radius: 10px;
+  padding-left: 1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+main .mainContent .alertBgColor .btnClose {
+  background-color: #ebebeb !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.9rem;
+  padding-top: 0.9rem;
+  background: unset;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  top: 8px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+
+main .mainContent .alertBgColor .btnClose:hover {
+  background-color: #e2e2e2 !important;
+}
+
+main .mainContent .notification,
+main .mainContent .tabPane {
+  border-radius: 0.9rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .tabPane {
+  overflow: hidden;
+}
+
+main .mainContent .notification .campaignText,
+main .mainContent .tabPane h5 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+main .mainContent .flexText {
+  display: flex;
+  align-items: center;
+}
+main .mainContent .notification .campaignFlex,
+main .mainContent .notification .switchAndDotsBtn,
+main .mainContent .basicForm .switchAndDotsBtn,
+main .mainContent .formTab .switchAndDotsBtn,
+.accordionBody .switchAndDotsBtn {
+  padding: 1.2rem;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .textRed {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #d82128;
+  padding: 0.3rem 1.2rem;
+}
+
+main .mainContent .notification .ellipsisBtn,
+main .mainContent .table .ellipsisBtn {
+  background-color: #e4e6eb;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 6px;
+  padding: 0.309rem 0.95rem;
+  margin-left: 1rem;
+  transition: all 0.25s ease;
+}
+
+main .mainContent .notification .dropdownMenu {
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  border: 0;
+}
+
+main .mainContent .notification .dropdownMenu li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+main .mainContent .notification .dropdownMenu li a i {
+  margin-right: 0.5rem;
+}
+
+main .mainContent .notification .ellipsisBtn:hover,
+main .mainContent .table .ellipsisBtn:hover {
+  background-color: #d6d7da;
+}
+
+main .mainContent .notification .switchAndDotsBtn {
+  justify-content: flex-end;
+}
+
+main .mainContent .notification .switchAndDotsBtn .checkInput,
+main .mainContent .basicForm .switchAndDotsBtn .checkInput,
+main .mainContent .formTab .switchAndDotsBtn .checkInput,
+.accordionBody .switchAndDotsBtn .checkInput {
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+main .mainContent .notification .switchAndDotsBtn .checkInput:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%);
+}
+
+main .mainContent .notification .switchAndDotsBtn .checkInput:checked,
+main .mainContent .basicForm .switchAndDotsBtn .checkInput:checked,
+main .mainContent .formTab .switchAndDotsBtn .checkInput:checked,
+.accordionBody .switchAndDotsBtn .checkInput:checked {
+  background-color: #d82128;
+  border-color: #d82128;
+}
+
+main .mainContent .navTabs {
+  margin-bottom: 0 !important;
+  margin-top: 1rem;
+  border-top: 1px solid #ededed;
+  border-bottom: 0;
+}
+main .mainContent .accordionButton {
+  color: #717273;
+
+  background: unset;
+  box-shadow: none;
+  font-weight: 600;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+main .mainContent .navTabs .tabsBtn {
+  width: 33.33%;
+  position: relative;
+  color: #717273;
+  background: unset;
+  font-weight: 600;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+main .mainContent .navTabs .tabsBtn.active {
+  color: #d82128;
+}
+
+main .mainContent .navTabs .tabsBtn i {
+  margin-right: 0.6rem;
+}
+
+main .mainContent .navTabs .statisticsIcon {
+  fill: #717273;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-top: 0.1rem;
+  margin-right: 0.4rem;
+  transition: all 0.15s ease-in-out;
+}
+
+main .mainContent .navTabs .tabsBtn.active .statisticsIcon {
+  fill: #d82128;
+}
+
+main .mainContent .tabContent {
+  margin-top: 1.8rem;
+}
+
+main .mainContent .navTabs .tabsBtn.active::before,
+main .mainContent .accordionButton:not(.collapsed)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #d82128;
+  left: 0;
+  bottom: -1px;
+}
+
+main .mainContent .navTabs .tabPane2.active::before {
+  bottom: -5px;
+}
+
+main .mainContent .tabPane .marginBottom {
+  margin-bottom: 0.8rem;
+}
+
+main .mainContent .statisticsTabPane,
+main .mainContent .data {
+  padding: 1.2rem;
+}
+
+/* ------------------------------- */
+main .mainContent .calenderEnd .dropdownMenu {
+  min-width: 30rem;
+  z-index: 1;
+  border: 0;
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  inset: 12px 0px auto auto !important;
+}
+
+main .mainContent .calenderEnd .dropdownMenu .arrow {
+  position: absolute;
+  top: -7.5px;
+  left: 8.2rem;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+main .mainContent .calenderEnd .navPills .navLink {
+  color: #000000;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-right: 0;
+  border-radius: unset;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+main .mainContent .calenderEnd .navPills .navLink.active {
+  background-color: #d82128;
+  color: white;
+}
+
+main .mainContent .calenderEnd .tabContent .tabPane {
+  padding: 0;
+  text-align: center;
+}
+
+main .mainContent .calenderEnd .tabContent .tabPane h6 {
+  margin: 0.5rem 0 0.9rem 0;
+  color: #000000;
+  font-weight: 600;
+}
+
+main .mainContent .calenderEnd .tabContent .tableCalendar {
+  margin-bottom: 0;
+}
+
+main .mainContent .calenderEnd .tabContent .tableCalendar tbody,
+main .mainContent .calenderEnd .tabContent .tableCalendar td,
+main .mainContent .calenderEnd .tabContent .tableCalendar th,
+main .mainContent .calenderEnd .tabContent .tableCalendar thead,
+main .mainContent .calenderEnd .tabContent .tableCalendar tr {
+  border-width: 0;
+}
+
+main .mainContent .calenderEnd .tabContent .tableCalendar thead th {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+main .mainContent .calenderEnd .tabContent .tableCalendar tbody td {
+  color: #8f8f8f;
+  text-decoration: line-through;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+main .mainContent .calenderEnd .tabContent .tableCalendar tbody td:hover,
+main .mainContent .calenderEnd .tabContent .tableCalendar tbody td.active {
+  background-color: #d82128;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+main .mainContent .calenderEnd .calenderBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+main .mainContent .calenderEnd .calenderBtns button {
+  font-weight: 600;
+}
+
+main .mainContent .calenderEnd .calenderBtns .applyBtn {
+  background-color: #d82128;
+  color: white;
+}
+
+main .mainContent .previewsTop {
+  background-color: #f6f6f6;
+  padding: 1.2rem;
+  margin: 0.8rem;
+  border-radius: 0.7rem;
+}
+
+main .mainContent .previewsTop .previewText,
+main .mainContent .formTab .previewText,
+main .mainContent .accordionBody .previewText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+main .mainContent .previewsTop .previewText,
+main .mainContent .previewsTop .previewPara,
+main .mainContent .formTab .previewText,
+main .mainContent .accordionBody .previewText {
+  color: black;
+}
+
+main .mainContent .previewsTop .previewPara,
+main .mainContent .formTab .previewPara,
+.accordionBody .previewPara {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+main .mainContent .formTab {
+  margin-bottom: 0;
+}
+
+main .mainContent .formTab .alertBttomText,
+.accordionBody .alertBttomText {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #d82128;
+}
+
+main .mainContent .formTab .mt {
+  margin-top: 3.5rem;
+}
+
+main .mainContent .formTab .navPills,
+main .mainContent .accordionBody .navPills {
+  margin-top: 2rem;
+}
+
+main .mainContent .formTab .pillBtn,
+main .mainContent .accordionBody .pillBtn {
+  width: 100%;
+  text-align: left;
+  border-radius: 30px !important;
+  padding: 0.8rem 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+main .mainContent .formTab .pillBtn.active,
+main .mainContent .accordionBody .pillBtn.active {
+  color: white;
+  background-color: black;
+}
+
+main .mainContent .formTab .pillBtn i {
+  margin-right: 0.4rem;
+}
+
+main .mainContent .formTab p,
+.accordionBody p {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  color: #8f8f8f;
+}
+
+.alertBottom {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 8%), 0 4px 6px -2px rgb(0 0 0 / 4%);
+  color: black;
+  border: 2px solid #cbcbcb;
+  background-color: white;
+  margin: 0 0 0 auto;
+  max-width: 350px;
+  border-radius: 0.4rem;
+  padding-right: 0;
+}
+
+.alertBottom .alertText {
+  display: flex;
+}
+
+.alertBottom .alertText h6 {
+  font-weight: 600;
+}
+
+.alertBottom .alertText img,
+.accordionBody img {
+  width: 45px;
+  margin-right: 0.5rem;
+}
+
+.alertBottom .alertText h6,
+.alertBottom .alertText p,
+.accordionBody h6,
+.accordionBody p {
+  font-size: 0.9rem;
+}
+
+.alertBottom .btnCLose {
+  padding-top: 0.7rem;
+  opacity: 0.5;
+  background-image: unset;
+}
+
+.alertBottom .btnCLose i {
+  font-size: 1.1rem;
+}
+
+main .mainContent .tabPane2 {
+  width: 20% !important;
+  text-align: left;
+}
+
+main .mainContent .navTabs2 {
+  border-bottom: 3px solid #e4e4e4 !important;
+}
+
+main .mainContent .formTab {
+  padding: 0rem 1.2rem;
+}
+
+main .mainContent .basicForm .formLabel,
+main .mainContent .formTab .formLabel,
+.accordionBody .formLabel {
+  color: black;
+  font-weight: 600;
+}
+
+main .mainContent .basicForm .settingsFormInput,
+main .mainContent .settingsFormInput,
+main .mainContent .formSelect {
+  padding: 0.495rem 0.75rem;
+  border-radius: 0.49rem;
+  background-color: #f0f2f6;
+  border: 0;
+}
+main .blackBg {
+  width: 40px;
+  background-color: black;
+}
+main .mainContent .formBottomText p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #989898;
+}
+
+main .mainContent .formBottomText p span {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #f1a0b0;
+  color: #d82128;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn,
+main .mainContent .data .calenderBtn {
+  color: #d82128;
+  border: 2px solid #d82128;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn i:first-child,
+main .mainContent .data .calenderBtn i:first-child {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn i:last-child,
+main .mainContent .data .calenderBtn i {
+  margin-left: 0.7rem;
+}
+
+main .mainContent .statisticsTabPane .calenderEnd {
+  text-align: right;
+}
+
+main .mainContent .grayBg {
+  border-radius: 6px;
+  padding: 0.8rem;
+  background-color: #f1f1f1;
+}
+
+main .mainContent .grayBg .grayBgText {
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .grayBg .grayBgText h6 {
+  font-weight: 600;
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+main .mainContent .grayBg .grayBgText .icon {
+  border-radius: 6px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.7rem;
+  background-color: white;
+}
+
+main .mainContent .grayBg .grayBgText .icon i {
+  font-size: 1.1rem;
+}
+
+main .mainContent .grayBg .grayBgText p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+main .mainContent .arrowBoldImg {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+main .mainContent .graph {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b6b6b6;
+  border-left: 1px solid #b6b6b6;
+  min-height: 200px;
+  margin: 0 2rem;
+  position: relative;
+}
+
+main .mainContent .graphImg h6,
+main .mainContent .graphImg2 h6 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .mainContent .graphImg h6 span,
+main .mainContent .graphImg2 h6 span,
+main .mainContent .graph3 h6 span {
+  width: 60px;
+  height: 22px;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main .mainContent .graphImg h6 span {
+  background-color: #044389;
+}
+
+main .mainContent .graphImg2 h6 span {
+  background-color: #3bb273;
+}
+
+main .mainContent .graphImg3 h6 span {
+  background-color: #59a5db;
+}
+
+main .mainContent .graphImg h6 span::before,
+main .mainContent .graphImg2 h6 span::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main .mainContent .graph2 {
+  margin-top: 3rem;
+}
+
+main .mainContent .graph div {
+  position: absolute;
+  left: -17px;
+}
+
+main .mainContent .graph div span {
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #044389;
+  display: inline-block;
+}
+
+main .mainContent .graph div:nth-child(1) {
+  top: -8px;
+}
+
+main .mainContent .graph div:nth-child(2) {
+  top: 84px;
+}
+
+main .mainContent .graph div:nth-child(2) span,
+main .mainContent .graph2 div:nth-child(1) span {
+  right: -17px;
+}
+
+main .mainContent .graph div:nth-child(3) {
+  bottom: -9px;
+}
+
+main .mainContent .graph div:nth-child(3) span,
+main .mainContent .graph2 div:nth-child(2) span {
+  right: -12px;
+}
+
+main .mainContent .text {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0.5rem 0 0.5rem -0.5rem;
+}
+
+main .mainContent .dataTopText .importBtn {
+  border-radius: 6px;
+  color: white;
+  background-color: #d82128;
+  padding: 0.4rem 2rem;
+  border: 2px solid #d82128;
+  transition: all 0.25s ease-out;
+}
+
+main .mainContent .dataTopText .importBtn:hover {
+  background-color: white;
+  color: #d82128;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+main .mainContent .borderRadius {
+  border-radius: 13px;
+  border: 3px solid #f0f2f5;
+  margin-top: 0.8rem;
+}
+
+main .mainContent .table .dropdownMenu {
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  border: 0;
+  inset: unset !important;
+  top: -5rem !important;
+  left: -10.5rem !important;
+  transform: translate(0, 0) !important;
+}
+
+main .mainContent .table .dropdownMenu.dropdownMenu2 {
+  top: -9rem !important;
+  left: -11.5rem !important;
+}
+
+main .mainContent .table .dropdownMenu li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+main .mainContent .table .dropdownMenu li a i {
+  margin-right: 0.5rem;
+}
+
+main .mainContent .table > :not(caption) > * > * {
+  padding: 1rem;
+}
+
+main .mainContent .table tbody {
+  border-top: 0;
+}
+
+main .mainContent .table tbody tr:hover {
+  background-color: #fceeee;
+}
+
+main .mainContent .table tbody tr:hover .text a,
+main .mainContent .table tbody tr:hover .text,
+main .mainContent .table tbody tr:hover i {
+  color: #d82128;
+}
+
+main .mainContent .table .text a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+main .mainContent .basicForm p,
+main .mainContent .formTab p {
+  color: #717273;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+main .mainContent .basicForm .switchAndDotsBtn,
+main .mainContent .formTab .switchAndDotsBtn,
+.accordionBody .switchAndDotsBtn {
+  align-items: flex-start;
+}
+
+main .mainContent .basicForm .switchAndDotsBtn .me,
+main .mainContent .formTab .switchAndDotsBtn .me,
+.accordionBody .switchAndDotsBtn .me {
+  margin-left: 0.8rem;
+}
+
+main .mainContent .basicForm .switchAndDotsBtn .formCheck,
+main .mainContent .formTab .switchAndDotsBtn .formCheck,
+.accordionBody .switchAndDotsBtn .formCheck {
+  padding-left: 1.5rem;
+}
+
+main .mainContent .basicForm .switchAndDotsBtn .formLabel,
+.accordionBody .switchAndDotsBtn .formLabel {
+  margin-bottom: 0;
+}
+
+main .mainContent .basicForm .updateBtn,
+main .mainContent .formTab .updateBtn,
+.accordionBody .updateBtn {
+  background-color: #d82128;
+  color: white;
+  border: 2px solid #d82128;
+  font-weight: 500;
+  padding: 0.55rem 0;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.25s ease-out;
+}
+
+main .mainContent .basicForm .updateBtn:hover,
+main .mainContent .formTab .updateBtn:hover,
+.accordionBody .updateBtn:hover {
+  background-color: white;
+  color: #d82128;
+}
+main .mainContent .basicForm .pt,
+main .mainContent .formTab .pt,
+.accordionBody .pt {
+  padding-top: 2rem;
+}
+
+main .mainContent .basicForm .mb,
+main .mainContent .formTab .mb,
+main .mainContent .accordionBody .mb {
+  margin-bottom: 1.3rem;
+}
+main .mainContent .dataTopText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .mainContent .dataTopText .jsonText {
+  text-decoration: none;
+  color: #d82128;
+}
+
+main .mainContent .accordionTopBtn {
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .accordionBtn {
+  width: 20% !important;
+}
+
+main .mainContent .accordionTopBtn i {
+  margin-right: 0.6rem;
+}
+
+main .mainContent .accordionButton::after {
+  background-image: unset;
+}
+main .mainContent .accordionButton:not(.collapsed) {
+  color: #d82128;
+}
+
+main .mainContent .accordionItem {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+}
+
+main .mainContent .accordionItem .accordionBody,
+main .mainContent .accordionItem .accordionBody .basicForm {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main .mainContent .formBg {
+  background-color: #f5f8ff;
+}
+main .mainContent .inputGroupBtn {
+  color: #000000;
+  background-color: #cbcbcb;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  width: 190px;
+  border-top-left-radius: 0.49rem;
+  border-bottom-left-radius: 0.49rem;
+  position: relative;
+}
+main .mainContent .inputGroupBtn .fa-chevron-down {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: 0.9rem;
+}
+main .mainContent .triggerBtn {
+  color: #3bb273;
+  border: 3px solid #3bb273;
+  border-radius: 0.49rem;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  transition: all 0.25s ease;
+}
+main .mainContent .triggerBtn:hover {
+  color: white;
+  background-color: #3bb273;
+}
+main .mainContent .chevronRight {
+  position: absolute;
+  right: 0.3rem;
+  top: 13px;
+  display: none;
+}
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  header nav .dropdownList {
+    display: none;
+  }
+
+  main .leftSideBar {
+    transform: translateX(-110px);
+    transition: all 0.4s ease;
+    margin-top: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  header nav .navbar-collapse .navbarTop {
+    display: block;
+  }
+
+  header nav .sideBarBtn {
+    display: block;
+  }
+
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  main .mainContent {
+    margin-left: 0;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+
+  main .mainContent {
+    margin-top: calc(90px + 3rem);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main .mainContent .dataTopText {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main .mainContent .dataTopText .btn {
+    margin: 0.5rem 0;
+  }
+  main .mainContent .dataTopText .w100,
+  main .mainContent .dataTopText .btn {
+    width: 100%;
+  }
+  main .mainContent .statisticsText {
+    margin-bottom: 1rem;
+  }
+
+  .alertBottom,
+  .accordionBody .alertBottom {
+    margin: unset;
+    max-width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  main .mainContent .previewsTop .textCenter {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  main .mainContent .collapse:not(.show) {
+    display: none !important;
+  }
+
+  main .mainContent .topText {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main .mainContent .tabPane .filterBtnRight {
+    display: block;
+    margin-left: 0.3rem;
+  }
+  main .mainContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main .mainContent .tabPane .campaignsText {
+    margin-bottom: 0.8rem;
+  }
+
+  main .mainContent .tabPane .textEnd {
+    justify-content: flex-start;
+  }
+
+  main .mainContent .textRed {
+    text-align: left;
+  }
+
+  main .mainContent .navTabs .tabsBtn:last-child.active {
+    margin-top: 0.4rem;
+  }
+  main .mainContent .formBg {
+    background-color: unset;
+  }
+  main .mainContent .navTabs .tabsBtn,
+  main .mainContent .accordionButton {
+    background-color: #e4e5ea;
+    border: 3px solid transparent;
+    border-radius: 0.5rem;
+  }
+
+  main .mainContent .navTabs .tabsBtn,
+  main .mainContent .accordionButtonmain,
+  main .mainContent .accordionBtn {
+    width: 100% !important;
+  }
+  main .mainContent .navTabs .tabsBtn.active,
+  main .mainContent .accordionButton:not(.collapsed) {
+    background-color: white;
+    border-color: #d82128;
+    margin-bottom: 0.3rem;
+  }
+  main .mainContent .navTabs .tabsBtn.active .chevronRight,
+  main .mainContent .accordionButton:not(.collapsed) .chevronRight {
+    display: block;
+  }
+  main .mainContent .navTabs .tabsBtn.active::before,
+  main .mainContent .accordionButton:not(.collapsed)::before {
+    content: none;
+  }
+  main .mainContent .accordionTopBtn {
+    flex-direction: column;
+  }
+  main .mainContent .chevronRight {
+    display: none;
+  }
+  main .mainContent .navTabs,
+  main .mainContent .accordionTopBtn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  main .mainContent .previewsTop {
+    border-radius: 0;
+    margin: 0;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main .mainContent .topText ul li a {
+    font-size: 0.7rem;
+  }
+
+  main .mainContent .topText ul li {
+    margin: 0 0.4rem;
+  }
+  main .mainContent .flexText {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .mainContent .notification .domainText {
+    margin-top: 0;
+  }
+  main .mainContent .notification .domainText.ms {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  main .mainContent .campaignFlex h5 {
+    width: 13rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  main .mainContent .switchAndDotsBtn .ellipsisBtn {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-left: 0.5rem;
+  }
+}

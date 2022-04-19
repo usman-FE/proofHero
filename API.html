@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./css/API-style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a href="" class="navbar-brand p-0">
+              <img src="./img/logo.png" class="logo" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler navbarToggler"
+            data-bs-toggle="collapse"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <div class="navbarTop">
+              <ul class="navbar-nav navbarNav">
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="active">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbarRight ms-auto">
+              <div class="dropdown dropdownList">
+                <button
+                  class="btn p-0 userBtn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Shehzadkhan</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu dropdownMenu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-user-check"></i>Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-question"></i>Help center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="content">
+        <div>
+          <aside>
+            <div class="leftSideBar" id="sideBarOpen">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span>Campaign</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                    <span>Plan</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Payments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="active">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>API</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Affiliate</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="mainContent">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="topBox">
+                  <div class="padding">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <div class="ahsanImageText">
+                          <div class="faImage">
+                            <i class="fa-solid fa-image"></i>
+                          </div>
+                          <div>
+                            <h5 class="ahsanText">Ahsan</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 textEnd">
+                        <a href="" class="btn planBtn">Free Plan</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <a href="./account.html"
+                        ><i class="fas fa-screwdriver-wrench"></i>Account</a
+                      >
+                    </div>
+                    <div class="item">
+                      <a href="./plan.html"><i class="fas fa-box"></i>Plan</a>
+                    </div>
+                    <div class="item">
+                      <a href="./payments.html"
+                        ><i class="fas fa-dollar-sign"></i>Payments</a
+                      >
+                    </div>
+                    <div class="item">
+                      <a href="./API.html" class="active"
+                        ><i class="fa-brands fa-chrome"></i>API</a
+                      >
+                    </div>
+                    <div class="item">
+                      <a href="./logs.html">Logs</a>
+                    </div>
+                    <div class="item">
+                      <a href="./delete account.html"
+                        ><i class="fa-regular fa-trash-can"></i>Delete
+                        Account</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="accountPayments padding">
+                  <div>
+                    <div>
+                      <h5 class="paymentsText">API</h5>
+                      <p class="apiPara">
+                        Your API key. If needed, you can get a new one by
+                        hitting the button below. Looking for the API
+                        Documentation?
+                      </p>
+                    </div>
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control apiInput"
+                        placeholder="6PBH1NDYCJ9X1PHI6KF65G63V8A3NZAC"
+                      />
+                    </div>
+                    <div>
+                      <button class="btn apiBtn" type="button">
+                        Regenarate API Key
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 6,
+          },
+          768: {
+            items: 4,
+          },
+          1000: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

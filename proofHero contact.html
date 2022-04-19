@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/proofHero contact-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="headerTop">
+      <nav class="navbar navbar-expand-lg navbar-light pt-3">
+        <div class="container">
+          <a href="" class="navbar-brand p-0">
+            <img src="./img/logo.png" class="logo" alt="" />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler navbarToggler"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse navbarCollapse">
+            <ul class="navbar-nav me-auto">
+              <li>
+                <a href="" class="nav-link navLink">Plans</a>
+              </li>
+              <li>
+                <a href="" class="nav-link navLink">Notifications</a>
+              </li>
+            </ul>
+            <div class="navbarRight">
+              <div class="me-3">
+                <a href="" class="btn navbarRightBtn">Login</a>
+              </div>
+              <div>
+                <a href="" class="btn navbarRightBtn active">Start free</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-end offcanvasSideBar"
+      data-bs-scroll="false"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+    >
+      <div class="offcanvas-header offcanvasHeader">
+        <div class="offcanvasLogo">
+          <img src="./img/logo.png" class="logo" alt="" />
+        </div>
+        <button
+          type="button"
+          class="btn-close text-reset btnClose"
+          data-bs-dismiss="offcanvas"
+        >
+          <span>X</span>
+        </button>
+      </div>
+      <div class="offcanvas-body offcanvasBody">
+        <ul class="navbar-nav">
+          <li>
+            <a href="" class="nav-link">Plan</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Notifications</a>
+          </li>
+        </ul>
+        <div class="offcanvasBtn">
+          <div class="me-3">
+            <a href="" class="btn navbarRightBtn">Login</a>
+          </div>
+          <div>
+            <a href="" class="btn navbarRightBtn active">Start free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact ProofHero -->
+    <section id="contactProofHero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div>
+              <h5 class="contactText">Contact ProofHero</h5>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="mb">
+                <label for="" class="inputLabel">Name</label>
+                <input type="text" class="form-control formInput" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb">
+                <label for="" class="inputLabel">Phone</label>
+                <input type="tel" class="form-control formInput" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mb">
+                <label for="" class="inputLabel">Email</label>
+                <input type="email" class="form-control formInput" />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="mb">
+                <label for="" class="inputLabel">Message</label>
+                <textarea rows="4" class="form-control formTextarea"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="button" class="btn submitBtn">Submit</button>
+              <div class="mt-4 mb-2 text-center">
+                <div class="messageDelivered">
+                  Message delivered!
+                  <img
+                    src="./img/emoji.png"
+                    class="img-fluid emojiImg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/campaign1 delete-style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a href="" class="navbar-brand p-0">
+              <img src="./img/logo.png" class="logo" alt="" />
+            </a>
+          </div>
+          <button class="navbar-toggler navbarToggler" data-bs-toggle="collapse">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <div class="navbarTop">
+              <ul class="navbar-nav navbarNav">
+                <li>
+                  <a href="" class="active">
+                    <i class="fas fa-chart-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbarRight ms-auto">
+              <div class="dropdown dropdownList">
+                <button class="btn p-0 userBtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Shehzadkhan</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu dropdownMenu">
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-user-check"></i>Admin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-question"></i>Help center</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-moon"></i>Switch to dark mode</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="content">
+        <div>
+          <aside>
+            <div class="leftSideBar" id="sideBarOpen">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="active">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span>Campaign</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                    <span>Plan</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Payments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>API</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Affiliate</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="mainContent">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="dashboardText">
+                  <h5>Dashboard</h5>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="alert alertBgColor alert-warning alert-dismissible fade show" role="alert"> Welcome back,
+                  AltumCode! You've successfully logged in. <button type="button" class="btn-close btnClose"
+                    data-bs-dismiss="alert" aria-label="Close">
+                    <span>X</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="freePlanBox">
+                  <div class="row g-4">
+                    <div class="col-lg-4">
+                      <div class="grayBg">
+                        <div class="grayBgText">
+                          <div class="icon">
+                            <i class="fa-solid fa-align-justify"></i>
+                          </div>
+                          <div>
+                            <h6>8</h6>
+                            <p>Campaigns</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="grayBg">
+                        <div class="grayBgText">
+                          <div class="icon">
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                          <div>
+                            <h6>98</h6>
+                            <p>Notifications</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="grayBg">
+                        <div class="grayBgText">
+                          <div class="icon">
+                            <i class="fa-regular fa-eye"></i>
+                          </div>
+                          <div>
+                            <h6>
+                              <span class="textGreen">1k</span>
+                              <span>/</span>
+                              <span>50k</span>
+                            </h6>
+                            <p>Impressions</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="campaignsBox">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 ">
+                      <div class="campaignsText">
+                        <h5>Latest campaigns</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="textEnd">
+                        <div class="filterBtnLeft dropdown">
+                          <button class="btn filterBtn" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown">
+                            <i class="fa fa-filter"></i>
+                          </button>
+                          <form action="" class="dropdown-menu dropdownMenuForm">
+                            <div>
+                              <div class="filterText">
+                                <h6>Filters</h6>
+                              </div>
+                              <div class="formInputs">
+                                <div class="mb">
+                                  <label for="">Search</label>
+                                  <input type="search" class="form-control">
+                                </div>
+                                <div class="mb">
+                                  <label for="">Search by</label>
+                                  <select class="form-select">
+                                    <option value="">Name</option>
+                                    <option value="">Email</option>
+                                    <option value="">Phone number</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Status</label>
+                                  <select class="form-select">
+                                    <option value="">All</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Order by</label>
+                                  <select class="form-select">
+                                    <option value="">Created datetime</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Order type</label>
+                                  <select class="form-select">
+                                    <option value="">Descending</option>
+                                    <option value="">Ascending</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="campaignBtn">
+                          <a class="btn createBtn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">+
+                            create campaign</a>
+                        </div>
+                        <div class="filterBtnRight dropdown">
+                          <button class="btn filterBtn" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown">
+                            <i class="fa fa-filter"></i>
+                          </button>
+                          <form action="" class="dropdown-menu dropdownMenuForm">
+                            <div>
+                              <div class="filterText">
+                                <h6>Filters</h6>
+                              </div>
+                              <div class="formInputs">
+                                <div class="mb">
+                                  <label for="">Search</label>
+                                  <input type="search" class="form-control">
+                                </div>
+                                <div class="mb">
+                                  <label for="">Search by</label>
+                                  <select class="form-select">
+                                    <option value="">Name</option>
+                                    <option value="">Email</option>
+                                    <option value="">Phone number</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Status</label>
+                                  <select class="form-select">
+                                    <option value="">All</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Order by</label>
+                                  <select class="form-select">
+                                    <option value="">Created datetime</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="">Order type</label>
+                                  <select class="form-select">
+                                    <option value="">Descending</option>
+                                    <option value="">Ascending</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="ilustration">
+                        <img src="./img/No data available ilustration.svg" alt="" class="img-fluid ilustrationImg">
+                        <div class="imgTextBottom">
+                          <h6>No data available...</h6>
+                          <p>There are no campaigns at the moment, why not create one?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade modalBox" id="staticBackdrop" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modalContent">
+          <div class="modal-header modalTop">
+            <h5 class="modal-title modalTitle" id="staticBackdropLabel"> Install pixel </h5>
+            <button type="button" class="btn modalCloseBtn" data-bs-dismiss="modal">
+              <span>X</span>
+            </button>
+          </div>
+          <div class="modal-body modalBody">
+            <div>
+              <h6>Step 1</h6>
+              <p> Copy your JS code snipped (you'll need it for the next step). </p>
+            </div>
+            <div class="grayBox"></div>
+            <div class="border-bottom">
+              <button class="btn modalCopyBtn">Copy code</button>
+            </div>
+            <div class="mt border-bottom">
+              <h6>Step 2</h6>
+              <p class="mb"> Follow the instructions to see <a class="proofHeroAdd" href="">how to add ProofHero in any
+                  website.</a>
+              </p>
+            </div>
+            <div class="mt border-bottom">
+              <h6>Step 3</h6>
+              <p>
+                <span>Now, visit your website</span> in incognito mode (to avoid cache issues). </p>
+              <p class="mb-2"> Not working? make sure you installed it correctly and try again. </p>
+            </div>
+            <div>
+              <button type="button" class="btn installedBtn"> Pixel installed </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,741 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus,
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+main .mainContent input:focus,
+main .mainContent select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%);
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 1rem !important;
+  padding-bottom: 0;
+  box-shadow: 0px 2px 0px 0px #e4e4e4;
+  background-color: #ffffff;
+}
+
+header nav .logo {
+  width: 150px;
+}
+
+header nav .navbar-collapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+
+header nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user,
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  background-color: #f1f1f1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarRight span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999090;
+}
+
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.1rem;
+}
+
+header nav .dropdownList .dropdownMenu {
+  box-shadow: 0px 5px 10px #eaeaea;
+  border: 3px solid #d8d8d8;
+  left: 6%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header nav .dropdownList .dropdownMenu li {
+  margin: 0.1rem 0;
+}
+
+header nav .dropdownList .dropdownMenu li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+header nav .dropdownList .dropdownMenu li a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav {
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #e4e6eb;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+header nav .navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarTop {
+  display: none;
+}
+
+header nav .navbar-collapse .navbarNav li {
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav li a {
+  color: #717273;
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a.active {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover::before,
+header nav .navbar-collapse .navbarNav li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main .content {
+  display: flex;
+}
+
+main aside .leftSideBar {
+  width: 100px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 90px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover {
+  width: 200px;
+}
+
+main aside .leftSideBar span {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover span {
+  opacity: 1;
+  display: inline;
+}
+
+main aside .leftSideBar ul {
+  padding: 0;
+  margin: 0;
+}
+
+main aside .leftSideBar ul li {
+  list-style: none;
+  margin-left: 34px;
+  position: relative;
+}
+
+main aside .leftSideBar ul li a {
+  color: #717273;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  height: 70px;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a i {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+}
+
+main aside .leftSideBar ul li a.active::before,
+main aside .leftSideBar ul li a:hover::before {
+  opacity: 1;
+}
+
+main aside .leftSideBar ul li a.active,
+main aside .leftSideBar ul li a:hover {
+  color: #d82128;
+}
+
+main .mainContent {
+  width: 100%;
+  margin-top: calc(90px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .topText {
+  margin-bottom: 1.5rem;
+}
+
+main .mainContent .topText ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .topText ul li {
+  list-style: none;
+  margin: 0 0.8rem;
+}
+
+main .mainContent .topText ul li:first-child {
+  margin-left: 0;
+}
+
+main .mainContent .topText ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+main .mainContent .topText ul li i,
+main .mainContent .topText ul li a {
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+
+main .mainContent .topText ul li a:hover,
+main .mainContent ul li a.active {
+  color: black;
+}
+
+main .mainContent .premiumPlanForm {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+}
+
+main .mainContent .verticalLine {
+  position: relative;
+}
+
+main .mainContent .verticalLine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1.8rem;
+  width: 2px;
+  height: 100%;
+  background-color: #e4e4e4;
+}
+
+main .mainContent .premiumPlanForm .formTabs {
+  background-color: #f0f2f6;
+  border-bottom: 0;
+  border-radius: 1.2rem;
+  padding: 0.6rem;
+  margin-top: 1rem;
+}
+
+main .mainContent .premiumPlanForm .formTabs .tabBtn {
+  color: #989898;
+  position: relative;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+  width: 50%;
+  padding: 1.6rem 0;
+  border-radius: 1rem;
+}
+
+main .mainContent .premiumPlanForm .formTabs .tabBtn.active {
+  background-color: white;
+  color: black;
+}
+
+main .mainContent .premiumPlanForm .tabContent .usdPrice {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #044389;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+main .mainContent .dropdownBtn {
+  border: 2px solid #044389;
+  color: #044389;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+main .mainContent .dropdownInput {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  min-width: 25rem;
+  margin-top: 2rem;
+  transform: translate3d(0, 75px, 0px) !important;
+}
+
+main .mainContent .dropdownInput input {
+  padding: 0.495rem 0.75rem !important;
+  padding-left: 2.5rem !important;
+  margin-bottom: 1.3rem;
+  border-radius: 0.49rem !important;
+  background-color: #f0f2f6;
+  border: 0;
+  position: relative;
+}
+
+main .mainContent .searchIcon {
+  position: absolute;
+  z-index: 1;
+  top: 24%;
+  left: 1rem;
+}
+
+main .mainContent .searchIcon i {
+  color: #989898;
+}
+
+main .mainContent .dropdownCountry {
+  padding: 0;
+  margin: 0;
+}
+
+main .mainContent .dropdownCountry li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+main .mainContent .dropdownCountry li a {
+  color: #989898;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  text-decoration: none;
+}
+
+main .mainContent .fa-chevron-down {
+  margin-left: 0.8rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .usdPrice sup {
+  font-size: 1.5rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #666666;
+}
+
+main .mainContent .premiumPlanForm .tabContent input {
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  padding: 0.7rem 0.75rem 0.7rem 2.5rem;
+}
+
+main .mainContent .premiumPlanForm .nameCard,
+main .mainContent .premiumPlanForm .formSelect {
+  color: #666666;
+  padding: 0.7rem 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem !important;
+}
+
+main .mainContent .premiumPlanForm .nameCard,
+main .mainContent .premiumPlanForm .cardInformation input,
+main .mainContent .premiumPlanForm .billingAddress input {
+  padding-left: 0.75rem !important;
+}
+
+main .mainContent .premiumPlanForm .formSelect {
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+main .mainContent .premiumPlanForm .tabContent .InputBox,
+main .mainContent .premiumPlanForm .tabContent .cards {
+  position: relative;
+}
+
+main .mainContent .premiumPlanForm .tabContent .inputIcon,
+main .mainContent .premiumPlanForm .tabContent .cardImg {
+  position: absolute;
+  top: 30%;
+  z-index: 0;
+}
+
+main .mainContent .premiumPlanForm .tabContent .inputIcon {
+  left: 0.75rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .cardImg {
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .premiumPlanForm .tabContent .cardImg img {
+  width: 2.5rem;
+  transform: translateY(-6px);
+  border-radius: 4px;
+  margin-left: 0.2rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .inputIcon img {
+  width: 1.2rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .envelope i {
+  font-size: 1.2rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .numberInput,
+main .mainContent .premiumPlanForm .billingAddress input {
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-top: 0;
+}
+
+.premiumPlanForm .tabContent .cardInformation,
+.premiumPlanForm .cardName,
+.premiumPlanForm .billingAddress {
+  margin-top: 1.4rem;
+}
+
+main .mainContent .premiumPlanForm .tabContent .cardInputData {
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .premiumPlanForm .tabContent .cardInputData input {
+  width: 50%;
+  border-top: 0;
+}
+
+main .mainContent .tabContent .cardInputData input:first-child {
+  border-radius: 0 0 0 0.5rem;
+  border-right: 0;
+}
+
+main .mainContent .tabContent .cardInputData input:last-child {
+  border-radius: 0 0 0.5rem 0;
+}
+
+main .mainContent .tabContent .payNowBtn {
+  color: white;
+  background-color: #d82128;
+  border: 2px solid #d82128;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-out;
+}
+
+main .mainContent .tabContent .payNowBtn:hover {
+  color: #d82128;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+main .mainContent .tabContent .formBottomImg {
+  text-align: center;
+}
+
+main .mainContent .tabContent .formBottomImg img {
+  width: 85%;
+}
+
+main .mainContent .rightText {
+  padding-left: 2.5rem;
+}
+
+main .mainContent .rightText ul {
+  padding: 0;
+  margin: 0;
+}
+
+main .mainContent .rightText ul li {
+  list-style: none;
+  margin: 0.6rem 0;
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+main .mainContent .rightText ul li .fa-circle-check {
+  color: #40da6d;
+}
+
+main .mainContent .rightText ul li .fa-circle-xmark {
+  color: #d82128;
+}
+
+main .mainContent .rightText ul li i {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+main .mainContent .rightText .textBold {
+  font-weight: 600;
+}
+
+main .mainContent .rightText .orderCard {
+  border-radius: 4px;
+  margin-top: 3.3rem;
+}
+
+main .mainContent .rightText .orderCard .cardBody,
+main .mainContent .rightText .orderCard .cardTop,
+main .mainContent .rightText .orderCard .cardBottomText {
+  padding: 0.6rem 1rem;
+}
+
+main .mainContent .rightText .orderCard .cardTop {
+  border-radius: 4px 4px 0 0;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+main .mainContent .rightText .orderCard .cardTop h6 {
+  color: #666666;
+  font-weight: 600;
+}
+
+main .mainContent .rightText .orderCard .cardBodyText,
+main .mainContent .rightText .orderCard .cardBottomText {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .mainContent .rightText .orderCard .textEnd {
+  text-align: right;
+}
+
+main .mainContent .rightText .orderCard .smallText {
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+main .mainContent .rightText .orderCard .mb {
+  margin-bottom: 0.9rem;
+}
+
+main .mainContent .rightText .orderCard i {
+  color: #666666;
+  margin-left: 0.3rem;
+}
+
+main .mainContent .rightText .orderCard .cardBtn {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: all 0.25s ease-out;
+  margin-top: 0.5rem;
+}
+
+main .mainContent .rightText .orderCard .cardBtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-color: white;
+}
+
+main .mainContent .rightText .orderCard .cardBottomText {
+  border-top: 1px solid #e4e4e4;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+main .mainContent .rightText .darkGrayColor {
+  color: #9b9a98;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+main .mainContent .dNone {
+  display: none;
+}
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  main .mainContent .dNone {
+    display: block;
+  }
+  header nav .dropdownList {
+    display: none;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+
+  header nav .navbar-collapse .navbarTop {
+    display: block;
+  }
+
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+
+  header nav .sideBarBtn {
+    display: block;
+  }
+
+  main .leftSideBar {
+    transform: translateX(-110px);
+    transition: all 0.4s ease;
+    margin-top: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  main .mainContent {
+    margin-top: calc(90px + 3rem);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .mainContent .rightText {
+    padding-left: 0;
+  }
+  main .mainContent .topText {
+    margin-bottom: 1rem;
+  }
+  main .mainContent .rightText .darkGrayColor,
+  main .mainContent .rightText ul {
+    display: none;
+  }
+
+  main .mainContent .rightText .formBottomImg img {
+    width: 100%;
+  }
+  main .mainContent .rightText .orderCard {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main .mainContent .topText ul li a {
+    font-size: 0.7rem;
+  }
+
+  main .mainContent .topText ul li {
+    margin: 0 0.4rem;
+  }
+
+  main .mainContent .premiumPlanForm .formTabs .tabBtn {
+    padding: 1.2rem 0;
+  }
+
+  main .mainContent .dropdownInput {
+    min-width: 20rem;
+  }
+}

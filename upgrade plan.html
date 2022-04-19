@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/upgrade plan-style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a href="" class="navbar-brand p-0">
+              <img src="./img/logo.png" class="logo" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler navbarToggler"
+            data-bs-toggle="collapse"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <div class="navbarTop">
+              <ul class="navbar-nav navbarNav">
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbarRight ms-auto">
+              <div class="dropdown dropdownList">
+                <button
+                  class="btn p-0 userBtn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Shehzadkhan</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu dropdownMenu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-user-check"></i>Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-question"></i>Help center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="content">
+        <div>
+          <aside>
+            <div class="leftSideBar" id="sideBarOpen">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span>Campaign</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                    <span>Plan</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Payments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>API</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Affiliate</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="mainContent">
+          <div>
+            <div class="col-lg-12">
+              <div class="topText">
+                <ul>
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li><i class="fa-solid fa-chevron-right"></i></li>
+                  <li>
+                    <a href="" class="active">Choose plan</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="upgradePlanTopBgColor">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-5 mx-auto text-center">
+                    <div>
+                      <h5 class="campaignText">Upgrade your plan</h5>
+                      <p class="whiteText">
+                        Select one plane to upgrade your subscription.
+                      </p>
+                    </div>
+                    <div class="switchBtn">
+                      <div class="whiteText">Monthly</div>
+                      <div class="mx-3">
+                        <input type="checkbox" class="form-check-input" />
+                      </div>
+                      <div class="whiteText">Annual</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="upgradePackageCards">
+              <div class="nextAndPrev">
+                <button class="btn prevBtn" type="button">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="btn nextBtn" type="button">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+              <div class="container">
+                <div class="row g-0 justify-content-around">
+                  <div class="col-lg-3">
+                    <div class="card accountPlanCard">
+                      <div class="cardPackageText">
+                        <div class="cardTop">
+                          <h5>Free</h5>
+                          <div class="usdPrice">
+                            <sup>USD</sup>
+                            <span>0</span>
+                          </div>
+                          <a href="" class="btn cardBtn">Add to my website</a>
+                        </div>
+                      </div>
+                      <div class="cardBodyText">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span> Campaigns
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span>
+                            Notifications
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">2,000</span> Notifications
+                            <div class="ms-5">Impressions/month</div>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">15</span> days statistics
+                            retention
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>All
+                            Notifications Enabled
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>No Ads
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought"
+                              >Removable Branding</span
+                            >
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">Custom Branding</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">API access</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">Affiliate access</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card accountPlanCard">
+                      <div class="cardPackageText">
+                        <div class="cardTop">
+                          <h5>Silver</h5>
+                          <div class="usdPrice">
+                            <sup>USD</sup>
+                            <span>18</span>
+                          </div>
+                          <a href="" class="btn cardBtn">Add to my website</a>
+                        </div>
+                      </div>
+                      <div class="cardBodyText">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span> Campaigns
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span>
+                            Notifications
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">25,000</span> Notifications
+                            <div class="ms-5">Impressions/month</div>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">45</span> days statistics
+                            retention
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>All
+                            Notifications Enabled
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>No Ads
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span>Removable Branding</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span>Custom Branding</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">API access</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">Affiliate access</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card accountPlanCard">
+                      <div class="cardPackageText">
+                        <div class="cardTop">
+                          <h5>Gold</h5>
+                          <div class="usdPrice">
+                            <sup>USD</sup>
+                            <span>45</span>
+                          </div>
+                          <a href="" class="btn cardBtn">Add to my website</a>
+                        </div>
+                      </div>
+                      <div class="cardBodyText">
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span> Campaigns
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">Unlimited</span>
+                            Notifications
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">50,000</span> Notifications
+                            <div class="ms-5">Impressions/month</div>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span class="textBold">60</span> days statistics
+                            retention
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>All
+                            Notifications Enabled
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i>No Ads
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span>Removable Branding</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-check"></i
+                            ><span>Custom Branding</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">API access</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-circle-xmark"></i
+                            ><span class="lineThrought">Affiliate access</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script></script>
+  </body>
+</html>

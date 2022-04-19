@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/my new notification-style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a href="" class="navbar-brand p-0">
+              <img src="./img/logo.png" class="logo" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler navbarToggler"
+            data-bs-toggle="collapse"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <div class="navbarTop">
+              <ul class="navbar-nav navbarNav">
+                <li>
+                  <a href="" class="active">
+                    <i class="fas fa-chart-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbarRight ms-auto">
+              <div class="dropdown dropdownList">
+                <button
+                  class="btn p-0 userBtn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Shehzadkhan</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu dropdownMenu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-user-check"></i>Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-question"></i>Help center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-moon"></i>Switch to dark mode</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="content">
+        <div>
+          <aside>
+            <div class="leftSideBar" id="sideBarOpen">
+              <ul>
+                <li>
+                  <a href="" class="active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span>Campaign</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-box"></i>
+                    <span>Plan</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Payments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>API</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Affiliate</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="mainContent">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="topText">
+                  <ul>
+                    <li>
+                      <a href="./index.html">Dashboard</a>
+                    </li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    <li>
+                      <a href="./campaign1.html">Campaign</a>
+                    </li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    <li>
+                      <a href="" class="active">Notification</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div
+                  class="alert alertBgColor alert-warning alert-dismissible fade show"
+                  role="alert"
+                >
+                  Welcome back, AltumCode! You've successfully logged in.
+                  <button
+                    type="button"
+                    class="btn-close btnClose"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  >
+                    <span>X</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="notification">
+                  <div class="row">
+                    <div class="col-lg-7 col-7">
+                      <div class="campaignFlex">
+                        <div>
+                          <h5 class="campaignText">My new notification</h5>
+                          <div class="flexText">
+                            <p class="domainText">domain.com</p>
+                            <p class="domainText ms">Request Collector</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-5">
+                      <div class="switchAndDotsBtn">
+                        <div class="form-check form-switch">
+                          <input
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Change the status of the campaign"
+                            class="form-check-input checkInput"
+                            type="checkbox"
+                            role="switch"
+                            checked
+                          />
+                        </div>
+                        <div>
+                          <div class="dropdown">
+                            <button
+                              class="btn ellipsisBtn"
+                              type="button"
+                              id="dropdownMenuButton2"
+                              data-bs-toggle="dropdown"
+                            >
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdownMenu">
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="fa-solid fa-bars-progress"></i
+                                  >View</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="fa-solid fa-chart-column"></i
+                                  >Statistics</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <i class="fa-solid fa-pencil"></i>Edit</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="fa-solid fa-code"></i>Install
+                                  Pixel</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Custom Branding</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="fa-solid fa-xmark"></i>Delete</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <nav>
+                    <div
+                      class="nav nav-tabs navTabs"
+                      id="nav-tab"
+                      role="tablist"
+                    >
+                      <button
+                        class="nav-link active tabsBtn"
+                        id="nav-settings-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-settings"
+                        type="button"
+                        role="tab"
+                      >
+                        <i class="fa-solid fa-gears"></i> Settings
+                        <i class="fa-solid fa-chevron-up chevronRight"></i>
+                      </button>
+                      <button
+                        class="nav-link tabsBtn"
+                        id="nav-statistics-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-statistics"
+                        type="button"
+                        role="tab"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 64 64"
+                          class="statisticsIcon"
+                        >
+                          <path
+                            d="M 47 0 A 1 1 0 0 0 47 2 L 54.585938 2 L 51.236328 5.3515625 A 101.031 101.031 0 0 1 10.695312 30.050781 A 1 1 0 0 0 11 32 A 1 1 0 0 0 11.300781 31.953125 A 103.042 103.042 0 0 0 52.650391 6.765625 L 56 3.4140625 L 56 11 A 1 1 0 0 0 58 11 L 58 1 A 1 1 0 0 0 57 0 L 47 0 z M 2.9121094 0.001953125 A 3 3 0 0 0 0 3 L 0 59 A 5.006 5.006 0 0 0 5 64 L 61 64 A 3 3 0 0 0 61 58 L 6 58 L 6 3 A 3 3 0 0 0 2.9121094 0.001953125 z M 50 17 A 1 1 0 0 0 49 18 L 49 56 L 58 56 L 58 18 A 1 1 0 0 0 57 17 L 50 17 z M 37 25 A 1 1 0 0 0 36 26 L 36 56 L 45 56 L 45 26 A 1 1 0 0 0 44 25 L 37 25 z M 24 32 A 1 1 0 0 0 23 33 L 23 56 L 32 56 L 32 33 A 1 1 0 0 0 31 32 L 24 32 z M 11 39 A 1 1 0 0 0 10 40 L 10 56 L 19 56 L 19 40 A 1 1 0 0 0 18 39 L 11 39 z"
+                          ></path>
+                        </svg>
+                        Statistics
+                        <i class="fa-solid fa-chevron-up chevronRight"></i>
+                      </button>
+                      <button
+                        class="nav-link tabsBtn"
+                        id="nav-data-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-data"
+                        type="button"
+                        role="tab"
+                      >
+                        <i class="fa-solid fa-star"></i> Data
+                        <i class="fa-solid fa-chevron-up chevronRight"></i>
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="row">
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane tabPane fade show active settings"
+                  id="nav-settings"
+                  role="tabpanel"
+                >
+                  <div class="col-lg-12">
+                    <div class="previewsTop">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6 textCenter">
+                          <h6 class="previewText">Preview</h6>
+                          <p class="previewPara">
+                            Overall preview of how it would look like.
+                          </p>
+                        </div>
+                        <div class="col-lg-6">
+                          <div
+                            class="alert alertBottom alert-warning alert-dismissible fade show"
+                            role="alert"
+                          >
+                            <div class="alertText">
+                              <div>
+                                <img src="./img/sale.png" alt="" />
+                              </div>
+                              <div>
+                                <h6>Flash sale!</h6>
+                                <p>Limited sale until tonight, right now!</p>
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn-close btnCLose"
+                              data-bs-dismiss="alert"
+                              aria-label="Close"
+                            >
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row d-md-none d-block">
+                      <div class="col-lg-12">
+                        <div class="accordionTopBtn">
+                          <div class="accordionBtn">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button
+                                class="accordion-button accordionButton"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                              >
+                                <i class="fa-solid fa-gear"></i> Basic
+                                <i
+                                  class="fa-solid fa-chevron-up chevronRight"
+                                ></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="accordionBtn">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button
+                                class="accordion-button accordionButton collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                              >
+                                <i class="fa-solid fa-chevron-up"></i> Triggers
+                                <i
+                                  class="fa-solid fa-chevron-up chevronRight"
+                                ></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="accordionBtn">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button
+                                class="accordion-button accordionButton collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                              >
+                                <i class="fa-solid fa-tv"></i> Display
+                                <i
+                                  class="fa-solid fa-chevron-up chevronRight"
+                                ></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="accordionBtn">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button
+                                class="accordion-button accordionButton collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                              >
+                                <i class="fa-solid fa-pen-fancy"></i> Customize
+                                <i
+                                  class="fa-solid fa-chevron-up chevronRight"
+                                ></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="accordionBtn">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button
+                                class="accordion-button accordionButton collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive"
+                              >
+                                <i class="fa-solid fa-star"></i> Data
+                                <i
+                                  class="fa-solid fa-chevron-up chevronRight"
+                                ></i>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion d-md-none d-block"
+                      id="accordionExample"
+                    >
+                      <div class="accordion-item accordionItem">
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body accordionBody">
+                            <form action="">
+                              <div class="basicForm">
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Notification name</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Conversion title</label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Description Message</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Image URL</label
+                                  >
+                                  <input
+                                    type="search"
+                                    class="form-control settingsFormInput"
+                                  />
+                                  <div>
+                                    <p>
+                                      Leave empty for no image. Hint: icons8.com
+                                      has a good library of small icons that you
+                                      can use.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Image Alt</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                  <div>
+                                    <p>
+                                      Image description for accessibility and
+                                      SEO purposes.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Content Title</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Content Description</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Input Placeholder</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Button Text</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                </div>
+                                <div class="switchAndDotsBtn mb">
+                                  <div class="form-check form-switch formCheck">
+                                    <input
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="top"
+                                      title=""
+                                      class="form-check-input checkInput"
+                                      type="checkbox"
+                                      role="switch"
+                                      checked=""
+                                      data-bs-original-title="Change the status of the campaign"
+                                      aria-label="Change the status of the campaign"
+                                    />
+                                  </div>
+                                  <div class="me">
+                                    <label for="" class="form-label formLabel"
+                                      >Show Agreement</label
+                                    >
+                                    <div>
+                                      <p>
+                                        Require the user to confirm his
+                                        agreement by ticking a checkbox.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Thank you URL</label
+                                  >
+                                  <input
+                                    type="search"
+                                    class="form-control settingsFormInput"
+                                  />
+                                  <div>
+                                    <p>
+                                      The URL the user will be redirected to
+                                      after submitting the form. Leave empty to
+                                      disable the function.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="pt">
+                                  <button type="button" class="btn updateBtn">
+                                    Update
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordionItem">
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body formBg accordionBody">
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="switchAndDotsBtn mb">
+                                    <div
+                                      class="form-check form-switch formCheck"
+                                    >
+                                      <input
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title=""
+                                        class="form-check-input checkInput"
+                                        type="checkbox"
+                                        role="switch"
+                                        data-bs-original-title="Change the status of the campaign"
+                                        aria-label="Change the status of the campaign"
+                                      />
+                                    </div>
+                                    <div class="me">
+                                      <label for="" class="form-label formLabel"
+                                        >Trigger on all pages</label
+                                      >
+                                      <div>
+                                        <p>
+                                          Where should the notification show?
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="input-group mb">
+                                    <button
+                                      class="btn inputGroupBtn"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                    >
+                                      Exact match
+                                      <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Action</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Another action</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Something else here</a
+                                        >
+                                      </li>
+                                      <li><hr class="dropdown-divider" /></li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Separated link</a
+                                        >
+                                      </li>
+                                    </ul>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                      placeholder="FULL URL (ex: https://domain.com )"
+                                    />
+                                  </div>
+                                  <div class="mb">
+                                    <button
+                                      class="btn triggerBtn"
+                                      type="button"
+                                    >
+                                      + Add new trigger
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Display Trigger</label
+                                    >
+                                  </div>
+                                  <div class="input-group">
+                                    <button
+                                      class="btn inputGroupBtn"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                    >
+                                      Delay
+                                      <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Action</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Another action</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Something else here</a
+                                        >
+                                      </li>
+                                      <li><hr class="dropdown-divider" /></li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >Separated link</a
+                                        >
+                                      </li>
+                                    </ul>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div class="mb">
+                                    <p>
+                                      On what event the notification should show
+                                      up.
+                                    </p>
+                                  </div>
+                                  <div class="mb">
+                                    <label for="" class="form-label formLabel"
+                                      >Display frequency</label
+                                    >
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                    <div>
+                                      <p>
+                                        How often should the notification
+                                        trigger?.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="switchAndDotsBtn mb">
+                                    <div
+                                      class="form-check form-switch formCheck"
+                                    >
+                                      <input
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title=""
+                                        class="form-check-input checkInput"
+                                        type="checkbox"
+                                        checked=""
+                                        role="switch"
+                                        data-bs-original-title="Change the status of the campaign"
+                                        aria-label="Change the status of the campaign"
+                                      />
+                                    </div>
+                                    <div class="me">
+                                      <label for="" class="form-label formLabel"
+                                        >Display on small screens</label
+                                      >
+                                      <div>
+                                        <p>
+                                          Whether or not to display the
+                                          notification on when pixels available
+                                          are smaller than 768px.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="switchAndDotsBtn mb">
+                                    <div
+                                      class="form-check form-switch formCheck"
+                                    >
+                                      <input
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title=""
+                                        class="form-check-input checkInput"
+                                        type="checkbox"
+                                        checked=""
+                                        role="switch"
+                                        data-bs-original-title="Change the status of the campaign"
+                                        aria-label="Change the status of the campaign"
+                                      />
+                                    </div>
+                                    <div class="me">
+                                      <label for="" class="form-label formLabel"
+                                        >Display on large screens</label
+                                      >
+                                      <div>
+                                        <p>
+                                          Whether or not to display the
+                                          notification on when pixels available
+                                          are bigger than 768px.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="pt mb">
+                                    <button type="button" class="btn updateBtn">
+                                      Update
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordionItem">
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body formBg accordionBody">
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="basicForm">
+                                    <div class="mb">
+                                      <label for="" class="form-label formLabel"
+                                        >Direction</label
+                                      >
+                                      <select class="form-select formSelect">
+                                        <option value="">Action 1</option>
+                                        <option value="">Action 2</option>
+                                        <option value="">Action 3</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb">
+                                      <label for="" class="form-label formLabel"
+                                        >Display Duration</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control settingsFormInput"
+                                      />
+                                      <div>
+                                        <p>
+                                          How many seconds to display the
+                                          notification. Set -1 to display
+                                          forever.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="mb">
+                                      <label for="" class="form-label formLabel"
+                                        >Display Position</label
+                                      >
+                                      <select class="form-select formSelect">
+                                        <option value="">Action 1</option>
+                                        <option value="">Action 2</option>
+                                        <option value="">Action 3</option>
+                                      </select>
+                                      <div>
+                                        <p>
+                                          Position of the notification on the
+                                          screen. Position doesn't change on the
+                                          preview.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="switchAndDotsBtn mb">
+                                      <div
+                                        class="form-check form-switch formCheck"
+                                      >
+                                        <input
+                                          data-bs-toggle="tooltip"
+                                          data-bs-placement="top"
+                                          title=""
+                                          class="form-check-input checkInput"
+                                          type="checkbox"
+                                          role="switch"
+                                          checked=""
+                                          data-bs-original-title="Change the status of the campaign"
+                                          aria-label="Change the status of the campaign"
+                                        />
+                                      </div>
+                                      <div class="me">
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Display Close Button</label
+                                        >
+                                      </div>
+                                    </div>
+                                    <div class="switchAndDotsBtn">
+                                      <div
+                                        class="form-check form-switch formCheck"
+                                      >
+                                        <input
+                                          data-bs-toggle="tooltip"
+                                          data-bs-placement="top"
+                                          title=""
+                                          class="form-check-input checkInput"
+                                          type="checkbox"
+                                          role="switch"
+                                          checked=""
+                                          data-bs-original-title="Change the status of the campaign"
+                                          aria-label="Change the status of the campaign"
+                                        />
+                                      </div>
+                                      <div class="me">
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Display Branding</label
+                                        >
+                                      </div>
+                                    </div>
+                                    <div class="pt mb">
+                                      <button
+                                        type="button"
+                                        class="btn updateBtn"
+                                      >
+                                        Update
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordionItem">
+                        <div
+                          id="collapseFour"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body formBg accordionBody">
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Title color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Description color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Content Title color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Content description color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Background color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Background pattern</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Button background color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Button color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Close button color</label
+                                    >
+                                  </div>
+                                  <div class="input-group mb">
+                                    <div class="blackBg"></div>
+                                    <input
+                                      type="search"
+                                      class="form-control settingsFormInput"
+                                    />
+                                  </div>
+                                  <div class="row mb g-4">
+                                    <div class="col-lg-4">
+                                      <div>
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Border radius</label
+                                        >
+                                      </div>
+                                      <div>
+                                        <select class="form-select formSelect">
+                                          <option value="">Action 1</option>
+                                          <option value="">Action 2</option>
+                                          <option value="">Action 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div>
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Border width</label
+                                        >
+                                      </div>
+                                      <div>
+                                        <select class="form-select formSelect">
+                                          <option value="">Action 1</option>
+                                          <option value="">Action 2</option>
+                                          <option value="">Action 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div>
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Border color</label
+                                        >
+                                      </div>
+                                      <div>
+                                        <select class="form-select formSelect">
+                                          <option value="">Action 1</option>
+                                          <option value="">Action 2</option>
+                                          <option value="">Action 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="switchAndDotsBtn mb">
+                                    <div
+                                      class="form-check form-switch formCheck"
+                                    >
+                                      <input
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title=""
+                                        class="form-check-input checkInput"
+                                        type="checkbox"
+                                        role="switch"
+                                        checked=""
+                                        data-bs-original-title="Change the status of the campaign"
+                                        aria-label="Change the status of the campaign"
+                                      />
+                                    </div>
+                                    <div class="me">
+                                      <label for="" class="form-label formLabel"
+                                        >Display shadow</label
+                                      >
+                                      <div>
+                                        <p>
+                                          Enable or disable the shadow around
+                                          the edges of the notification
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mb">
+                                    <div class="col-lg-6">
+                                      <div>
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Entrance Animation</label
+                                        >
+                                      </div>
+                                      <div>
+                                        <select class="form-select formSelect">
+                                          <option value="">Action 1</option>
+                                          <option value="">Action 2</option>
+                                          <option value="">Action 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div>
+                                        <label
+                                          for=""
+                                          class="form-label formLabel"
+                                          >Exit Animation</label
+                                        >
+                                      </div>
+                                      <div>
+                                        <select class="form-select formSelect">
+                                          <option value="">Action 1</option>
+                                          <option value="">Action 2</option>
+                                          <option value="">Action 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="mb">
+                                    <div>
+                                      <label for="" class="form-label formLabel"
+                                        >Font</label
+                                      >
+                                    </div>
+                                    <div>
+                                      <select class="form-select formSelect">
+                                        <option value="">Action 1</option>
+                                        <option value="">Action 2</option>
+                                        <option value="">Action 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="pt mb">
+                                    <button type="button" class="btn updateBtn">
+                                      Update
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordionItem">
+                        <div
+                          id="collapseFive"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body formBg accordionBody">
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="switchAndDotsBtn mb">
+                                    <div
+                                      class="form-check form-switch formCheck"
+                                    >
+                                      <input
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title=""
+                                        class="form-check-input checkInput"
+                                        type="checkbox"
+                                        role="switch"
+                                        checked=""
+                                        data-bs-original-title="Change the status of the campaign"
+                                        aria-label="Change the status of the campaign"
+                                      />
+                                    </div>
+                                    <div class="me">
+                                      <label for="" class="form-label formLabel"
+                                        >Send caught data to external
+                                        sources</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="mb">
+                                    <label for="" class="form-label formLabel"
+                                      >Webhook</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control settingsFormInput"
+                                    />
+                                    <div>
+                                      <p>Leave empty to disable this field.</p>
+                                    </div>
+                                  </div>
+                                  <div class="mb">
+                                    <label for="" class="form-label formLabel"
+                                      >Email</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control settingsFormInput"
+                                    />
+                                    <div>
+                                      <p>Leave empty to disable this field.</p>
+                                    </div>
+                                  </div>
+                                  <div class="pt mb">
+                                    <button type="button" class="btn updateBtn">
+                                      Update
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- //////////////////////////////////////////////////////////////////// -->
+                    <nav class="d-md-block d-none">
+                      <div
+                        class="nav nav-tabs navTabs navTabs2"
+                        id="nav-tab"
+                        role="tablist"
+                      >
+                        <button
+                          class="nav-link active tabsBtn tabPane2"
+                          id="nav-basic-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-basic"
+                          type="button"
+                          role="tab"
+                        >
+                          <i class="fa-solid fa-gear"></i> Basic
+                        </button>
+                        <button
+                          class="nav-link tabsBtn tabPane2"
+                          id="nav-triggers-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-triggers"
+                          type="button"
+                          role="tab"
+                        >
+                          <i class="fa-solid fa-chevron-up"></i> Triggers
+                        </button>
+                        <button
+                          class="nav-link tabsBtn tabPane2"
+                          id="nav-display-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-display"
+                          type="button"
+                          role="tab"
+                        >
+                          <i class="fa-light fa-display"></i> Display
+                        </button>
+                        <button
+                          class="nav-link tabsBtn tabPane2"
+                          id="nav-customize-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-customize"
+                          type="button"
+                          role="tab"
+                        >
+                          <i class="fa-solid fa-pen-fancy"></i> Customize
+                        </button>
+                        <button
+                          class="nav-link tabsBtn tabPane2"
+                          id="nav-data2-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-data2"
+                          type="button"
+                          role="tab"
+                        >
+                          <i class="fa-solid fa-star"></i> Data
+                        </button>
+                      </div>
+                    </nav>
+                    <div
+                      class="tab-content tabContent d-md-block d-none"
+                      id="nav-tabContent"
+                    >
+                      <div
+                        class="tab-pane fade show active tabPane formTab"
+                        id="nav-basic"
+                        role="tabpanel"
+                      >
+                        <form action="">
+                          <div class="basicForm">
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Notification name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Conversion title</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Description Message</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Image URL</label
+                              >
+                              <input
+                                type="search"
+                                class="form-control settingsFormInput"
+                              />
+                              <div>
+                                <p>
+                                  Leave empty for no image. Hint: icons8.com has
+                                  a good library of small icons that you can
+                                  use.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Image Alt</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                              <div>
+                                <p>
+                                  Image description for accessibility and SEO
+                                  purposes.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Content Title</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Content Description</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Input Placeholder</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Button Text</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control settingsFormInput"
+                              />
+                            </div>
+                            <div class="switchAndDotsBtn mb">
+                              <div class="form-check form-switch formCheck">
+                                <input
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  title=""
+                                  class="form-check-input checkInput"
+                                  type="checkbox"
+                                  role="switch"
+                                  checked=""
+                                  data-bs-original-title="Change the status of the campaign"
+                                  aria-label="Change the status of the campaign"
+                                />
+                              </div>
+                              <div class="me">
+                                <label for="" class="form-label formLabel"
+                                  >Show Agreement</label
+                                >
+                                <div>
+                                  <p>
+                                    Require the user to confirm his agreement by
+                                    ticking a checkbox.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb">
+                              <label for="" class="form-label formLabel"
+                                >Thank you URL</label
+                              >
+                              <input
+                                type="search"
+                                class="form-control settingsFormInput"
+                              />
+                              <div>
+                                <p>
+                                  The URL the user will be redirected to after
+                                  submitting the form. Leave empty to disable
+                                  the function.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="pt">
+                              <button type="button" class="btn updateBtn">
+                                Update
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade tabPane formTab"
+                        id="nav-triggers"
+                        role="tabpanel"
+                      >
+                        <form action="">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="switchAndDotsBtn mb">
+                                <div class="form-check form-switch formCheck">
+                                  <input
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    class="form-check-input checkInput"
+                                    type="checkbox"
+                                    role="switch"
+                                    data-bs-original-title="Change the status of the campaign"
+                                    aria-label="Change the status of the campaign"
+                                  />
+                                </div>
+                                <div class="me">
+                                  <label for="" class="form-label formLabel"
+                                    >Trigger on all pages</label
+                                  >
+                                  <div>
+                                    <p>Where should the notification show?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="input-group mb">
+                                <button
+                                  class="btn inputGroupBtn"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                >
+                                  Exact match
+                                  <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                  </li>
+                                  <li><hr class="dropdown-divider" /></li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </li>
+                                </ul>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                  placeholder="FULL URL (ex: https://domain.com )"
+                                />
+                              </div>
+                              <div class="mb">
+                                <button class="btn triggerBtn" type="button">
+                                  + Add new trigger
+                                </button>
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Display Trigger</label
+                                >
+                              </div>
+                              <div class="input-group">
+                                <button
+                                  class="btn inputGroupBtn"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                >
+                                  Delay
+                                  <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                  </li>
+                                  <li><hr class="dropdown-divider" /></li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Separated link</a
+                                    >
+                                  </li>
+                                </ul>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div class="mb">
+                                <p>
+                                  On what event the notification should show up.
+                                </p>
+                              </div>
+                              <div class="mb">
+                                <label for="" class="form-label formLabel"
+                                  >Display frequency</label
+                                >
+                                <select class="form-select formSelect">
+                                  <option value="">Action 1</option>
+                                  <option value="">Action 2</option>
+                                  <option value="">Action 3</option>
+                                </select>
+                                <div>
+                                  <p>
+                                    How often should the notification trigger?.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="switchAndDotsBtn mb">
+                                <div class="form-check form-switch formCheck">
+                                  <input
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    class="form-check-input checkInput"
+                                    type="checkbox"
+                                    checked=""
+                                    role="switch"
+                                    data-bs-original-title="Change the status of the campaign"
+                                    aria-label="Change the status of the campaign"
+                                  />
+                                </div>
+                                <div class="me">
+                                  <label for="" class="form-label formLabel"
+                                    >Display on small screens</label
+                                  >
+                                  <div>
+                                    <p>
+                                      Whether or not to display the notification
+                                      on when pixels available are smaller than
+                                      768px.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="switchAndDotsBtn mb">
+                                <div class="form-check form-switch formCheck">
+                                  <input
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    class="form-check-input checkInput"
+                                    type="checkbox"
+                                    checked=""
+                                    role="switch"
+                                    data-bs-original-title="Change the status of the campaign"
+                                    aria-label="Change the status of the campaign"
+                                  />
+                                </div>
+                                <div class="me">
+                                  <label for="" class="form-label formLabel"
+                                    >Display on large screens</label
+                                  >
+                                  <div>
+                                    <p>
+                                      Whether or not to display the notification
+                                      on when pixels available are bigger than
+                                      768px.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pt mb">
+                                <button type="button" class="btn updateBtn">
+                                  Update
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade formTab tabPane"
+                        id="nav-display"
+                        role="tabpanel"
+                      >
+                        <form action="">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="basicForm">
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Direction</label
+                                  >
+                                  <select class="form-select formSelect">
+                                    <option value="">Action 1</option>
+                                    <option value="">Action 2</option>
+                                    <option value="">Action 3</option>
+                                  </select>
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Display Duration</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control settingsFormInput"
+                                  />
+                                  <div>
+                                    <p>
+                                      How many seconds to display the
+                                      notification. Set -1 to display forever.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="mb">
+                                  <label for="" class="form-label formLabel"
+                                    >Display Position</label
+                                  >
+                                  <select class="form-select formSelect">
+                                    <option value="">Action 1</option>
+                                    <option value="">Action 2</option>
+                                    <option value="">Action 3</option>
+                                  </select>
+                                  <div>
+                                    <p>
+                                      Position of the notification on the
+                                      screen. Position doesn't change on the
+                                      preview.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="switchAndDotsBtn mb">
+                                  <div class="form-check form-switch formCheck">
+                                    <input
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="top"
+                                      title=""
+                                      class="form-check-input checkInput"
+                                      type="checkbox"
+                                      role="switch"
+                                      checked=""
+                                      data-bs-original-title="Change the status of the campaign"
+                                      aria-label="Change the status of the campaign"
+                                    />
+                                  </div>
+                                  <div class="me">
+                                    <label for="" class="form-label formLabel"
+                                      >Display Close Button</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="switchAndDotsBtn">
+                                  <div class="form-check form-switch formCheck">
+                                    <input
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="top"
+                                      title=""
+                                      class="form-check-input checkInput"
+                                      type="checkbox"
+                                      role="switch"
+                                      checked=""
+                                      data-bs-original-title="Change the status of the campaign"
+                                      aria-label="Change the status of the campaign"
+                                    />
+                                  </div>
+                                  <div class="me">
+                                    <label for="" class="form-label formLabel"
+                                      >Display Branding</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="pt mb">
+                                  <button type="button" class="btn updateBtn">
+                                    Update
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade formTab tabPane"
+                        id="nav-customize"
+                        role="tabpanel"
+                      >
+                        <form action="">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Title color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Description color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Content Title color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Content description color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Background color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Background pattern</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <select class="form-select formSelect">
+                                  <option value="">Action 1</option>
+                                  <option value="">Action 2</option>
+                                  <option value="">Action 3</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Button background color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Button color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div>
+                                <label for="" class="form-label formLabel"
+                                  >Close button color</label
+                                >
+                              </div>
+                              <div class="input-group mb">
+                                <div class="blackBg"></div>
+                                <input
+                                  type="search"
+                                  class="form-control settingsFormInput"
+                                />
+                              </div>
+                              <div class="row mb g-4">
+                                <div class="col-lg-4">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Border radius</label
+                                    >
+                                  </div>
+                                  <div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Border width</label
+                                    >
+                                  </div>
+                                  <div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Border color</label
+                                    >
+                                  </div>
+                                  <div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="switchAndDotsBtn mb">
+                                <div class="form-check form-switch formCheck">
+                                  <input
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    class="form-check-input checkInput"
+                                    type="checkbox"
+                                    role="switch"
+                                    checked=""
+                                    data-bs-original-title="Change the status of the campaign"
+                                    aria-label="Change the status of the campaign"
+                                  />
+                                </div>
+                                <div class="me">
+                                  <label for="" class="form-label formLabel"
+                                    >Display shadow</label
+                                  >
+                                  <div>
+                                    <p>
+                                      Enable or disable the shadow around the
+                                      edges of the notification
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb">
+                                <div class="col-lg-6">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Entrance Animation</label
+                                    >
+                                  </div>
+                                  <div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div>
+                                    <label for="" class="form-label formLabel"
+                                      >Exit Animation</label
+                                    >
+                                  </div>
+                                  <div>
+                                    <select class="form-select formSelect">
+                                      <option value="">Action 1</option>
+                                      <option value="">Action 2</option>
+                                      <option value="">Action 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb">
+                                <div>
+                                  <label for="" class="form-label formLabel"
+                                    >Font</label
+                                  >
+                                </div>
+                                <div>
+                                  <select class="form-select formSelect">
+                                    <option value="">Action 1</option>
+                                    <option value="">Action 2</option>
+                                    <option value="">Action 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="pt mb">
+                                <button type="button" class="btn updateBtn">
+                                  Update
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade formTab tabPane"
+                        id="nav-data2"
+                        role="tabpanel"
+                      >
+                        <form action="">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="switchAndDotsBtn mb">
+                                <div class="form-check form-switch formCheck">
+                                  <input
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    class="form-check-input checkInput"
+                                    type="checkbox"
+                                    role="switch"
+                                    checked=""
+                                    data-bs-original-title="Change the status of the campaign"
+                                    aria-label="Change the status of the campaign"
+                                  />
+                                </div>
+                                <div class="me">
+                                  <label for="" class="form-label formLabel"
+                                    >Send caught data to external sources</label
+                                  >
+                                </div>
+                              </div>
+                              <div class="mb">
+                                <label for="" class="form-label formLabel"
+                                  >Webhook</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control settingsFormInput"
+                                />
+                                <div>
+                                  <p>Leave empty to disable this field.</p>
+                                </div>
+                              </div>
+                              <div class="mb">
+                                <label for="" class="form-label formLabel"
+                                  >Email</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control settingsFormInput"
+                                />
+                                <div>
+                                  <p>Leave empty to disable this field.</p>
+                                </div>
+                              </div>
+                              <div class="pt mb">
+                                <button type="button" class="btn updateBtn">
+                                  Update
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane tabPane fade statisticsTabPane"
+                  id="nav-statistics"
+                  role="tabpanel"
+                >
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="row align-items-center">
+                        <div class="col-md-6">
+                          <div class="statisticsText">
+                            <h5>Statistics</h5>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="calenderEnd dropdown">
+                            <button
+                              class="btn calenderBtn"
+                              type="button"
+                              id="dropdownMenuButton3"
+                              data-bs-toggle="dropdown"
+                            >
+                              <i class="fa-solid fa-calendar-days"></i> 23
+                              January, 2022 - 28 January, 2022
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu dropdownMenu">
+                              <div class="arrow"></div>
+                              <div
+                                class="d-flex align-items-start flex-md-row flex-column justify-content-between"
+                              >
+                                <div
+                                  class="nav flex-column nav-pills navPills"
+                                  id="v-pills-tab"
+                                  role="tablist"
+                                >
+                                  <button
+                                    class="nav-link active navLink"
+                                    id="v-pills-home-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    Today
+                                  </button>
+                                  <button
+                                    class="nav-link navLink"
+                                    id="v-pills-profile-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    Last 7 days
+                                  </button>
+                                  <button
+                                    class="nav-link navLink"
+                                    id="v-pills-messages-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-messages"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    Last 30 days
+                                  </button>
+                                  <button
+                                    class="nav-link navLink"
+                                    id="v-pills-settings-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    This month
+                                  </button>
+                                  <button
+                                    class="nav-link navLink"
+                                    id="v-pills-settings-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    All time
+                                  </button>
+                                  <button
+                                    class="nav-link navLink"
+                                    id="v-pills-settings-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings"
+                                    type="button"
+                                    role="tab"
+                                  >
+                                    Custom
+                                  </button>
+                                </div>
+                                <div
+                                  class="tab-content tabContent"
+                                  id="v-pills-tabContent"
+                                >
+                                  <div
+                                    class="tab-pane fade show active tabPane"
+                                    id="v-pills-home"
+                                    role="tabpanel"
+                                  >
+                                    <h6>February 2022</h6>
+                                    <div class="table-responsive">
+                                      <table class="table tableCalendar">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Mon</th>
+                                            <th scope="col">Tue</th>
+                                            <th scope="col">Wed</th>
+                                            <th scope="col">Thu</th>
+                                            <th scope="col">Fri</th>
+                                            <th scope="col">Sat</th>
+                                            <th scope="col">Sun</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>32</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                          </tr>
+                                          <tr>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                          </tr>
+                                          <tr>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                          </tr>
+                                          <tr>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td class="active">26</td>
+                                            <td>27</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                          </tr>
+                                          <tr>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="v-pills-profile"
+                                    role="tabpanel"
+                                  >
+                                    ...
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="v-pills-messages"
+                                    role="tabpanel"
+                                  >
+                                    ...
+                                  </div>
+                                  <div
+                                    class="tab-pane fade"
+                                    id="v-pills-settings"
+                                    role="tabpanel"
+                                  >
+                                    ...
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="border-bottom"></div>
+                              <div class="calenderBtns">
+                                <div>
+                                  <button type="button" class="btn">
+                                    Cancel
+                                  </button>
+                                </div>
+                                <div>
+                                  <button type="button" class="btn applyBtn">
+                                    Apply
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-5 mt-2">
+                        <div class="col-lg-4">
+                          <div>
+                            <div class="grayBg">
+                              <div class="grayBgText">
+                                <div class="icon">
+                                  <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div>
+                                  <h6>28</h6>
+                                  <p>Impressions</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div>
+                            <div class="grayBg">
+                              <div class="grayBgText">
+                                <div class="icon">
+                                  <i class="fa-solid fa-arrow-pointer"></i>
+                                </div>
+                                <div>
+                                  <h6>7</h6>
+                                  <p>Mouse hovers</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div>
+                            <div class="grayBg">
+                              <div class="grayBgText">
+                                <div class="icon">
+                                  <i class="fa-solid fa-computer-mouse"></i>
+                                </div>
+                                <div>
+                                  <h6>1</h6>
+                                  <p>Clicks</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="graphImg">
+                            <h6><span></span>Impressions</h6>
+                            <div class="graph">
+                              <div>
+                                2<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="24 February, 2022 Impressions: 2"
+                                ></span>
+                              </div>
+                              <div>
+                                1<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="25 February, 2022 Impressions: 1"
+                                ></span>
+                              </div>
+                              <div>
+                                0<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="26 February, 2022 Impressions: 0"
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="text">24 February, 2022</div>
+                          </div>
+                          <div class="graphImg graphImg2">
+                            <h6><span></span>Mouse Hovers</h6>
+                            <div class="graph graph2">
+                              <div>
+                                1<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="25 February, 2022 Impressions: 1"
+                                ></span>
+                              </div>
+                              <div>
+                                0<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="26 February, 2022 Impressions: 0"
+                                ></span>
+                              </div>
+                              <div>
+                                2<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="24 February, 2022 Impressions: 2"
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="text">24 February, 2022</div>
+                          </div>
+                          <div class="graphImg graphImg3">
+                            <h6><span></span>Click</h6>
+                            <div class="graph graph2 graph3">
+                              <div>
+                                1<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="25 February, 2022 Impressions: 1"
+                                ></span>
+                              </div>
+                              <div>
+                                0<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="26 February, 2022 Impressions: 0"
+                                ></span>
+                              </div>
+                              <div>
+                                2<span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="right"
+                                  title="24 February, 2022 Impressions: 2"
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="text">24 February, 2022</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane tabPane fade fade data"
+                  id="nav-data"
+                  role="tabpanel"
+                >
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="row align-items-center">
+                        <div class="col-md-4">
+                          <div class="statisticsText">
+                            <h5>Statistics</h5>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="dataTopText">
+                            <div>
+                              <a href="" class="jsonText">Export to JSON</a>
+                            </div>
+                            <div class="w100">
+                              <a href="" class="btn importBtn">+ Import data</a>
+                            </div>
+                            <div class="calenderEnd">
+                              <button
+                                class="btn calenderBtn"
+                                type="button"
+                                id="dropdownMenuButton3"
+                                data-bs-toggle="dropdown"
+                              >
+                                <i class="fa-solid fa-calendar-days"></i> 23
+                                January, 2022 - 28 January, 2022
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </button>
+                              <div class="dropdown-menu dropdownMenu">
+                                <div class="arrow"></div>
+                                <div
+                                  class="d-flex align-items-start flex-md-row flex-column justify-content-between"
+                                >
+                                  <div
+                                    class="nav flex-column nav-pills navPills"
+                                    id="v-pills-tab"
+                                    role="tablist"
+                                  >
+                                    <button
+                                      class="nav-link active navLink"
+                                      id="v-pills-home-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-home"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      Today
+                                    </button>
+                                    <button
+                                      class="nav-link navLink"
+                                      id="v-pills-profile-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-profile"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      Last 7 days
+                                    </button>
+                                    <button
+                                      class="nav-link navLink"
+                                      id="v-pills-messages-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-messages"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      Last 30 days
+                                    </button>
+                                    <button
+                                      class="nav-link navLink"
+                                      id="v-pills-settings-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-settings"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      This month
+                                    </button>
+                                    <button
+                                      class="nav-link navLink"
+                                      id="v-pills-settings-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-settings"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      All time
+                                    </button>
+                                    <button
+                                      class="nav-link navLink"
+                                      id="v-pills-settings-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#v-pills-settings"
+                                      type="button"
+                                      role="tab"
+                                    >
+                                      Custom
+                                    </button>
+                                  </div>
+                                  <div
+                                    class="tab-content tabContent"
+                                    id="v-pills-tabContent"
+                                  >
+                                    <div
+                                      class="tab-pane fade show active tabPane"
+                                      id="v-pills-home"
+                                      role="tabpanel"
+                                    >
+                                      <h6>February 2022</h6>
+                                      <div class="table-responsive">
+                                        <table class="table tableCalendar">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">Mon</th>
+                                              <th scope="col">Tue</th>
+                                              <th scope="col">Wed</th>
+                                              <th scope="col">Thu</th>
+                                              <th scope="col">Fri</th>
+                                              <th scope="col">Sat</th>
+                                              <th scope="col">Sun</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>32</td>
+                                              <td>1</td>
+                                              <td>2</td>
+                                              <td>3</td>
+                                              <td>4</td>
+                                              <td>5</td>
+                                              <td>6</td>
+                                            </tr>
+                                            <tr>
+                                              <td>7</td>
+                                              <td>8</td>
+                                              <td>9</td>
+                                              <td>10</td>
+                                              <td>11</td>
+                                              <td>12</td>
+                                              <td>13</td>
+                                            </tr>
+                                            <tr>
+                                              <td>14</td>
+                                              <td>15</td>
+                                              <td>16</td>
+                                              <td>17</td>
+                                              <td>18</td>
+                                              <td>19</td>
+                                              <td>20</td>
+                                            </tr>
+                                            <tr>
+                                              <td>21</td>
+                                              <td>22</td>
+                                              <td>23</td>
+                                              <td>24</td>
+                                              <td>25</td>
+                                              <td class="active">26</td>
+                                              <td>27</td>
+                                            </tr>
+                                            <tr>
+                                              <td>28</td>
+                                              <td>1</td>
+                                              <td>2</td>
+                                              <td>3</td>
+                                              <td>4</td>
+                                              <td>5</td>
+                                              <td>6</td>
+                                            </tr>
+                                            <tr>
+                                              <td>7</td>
+                                              <td>8</td>
+                                              <td>9</td>
+                                              <td>10</td>
+                                              <td>11</td>
+                                              <td>12</td>
+                                              <td>13</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="tab-pane fade"
+                                      id="v-pills-profile"
+                                      role="tabpanel"
+                                    >
+                                      ...
+                                    </div>
+                                    <div
+                                      class="tab-pane fade"
+                                      id="v-pills-messages"
+                                      role="tabpanel"
+                                    >
+                                      ...
+                                    </div>
+                                    <div
+                                      class="tab-pane fade"
+                                      id="v-pills-settings"
+                                      role="tabpanel"
+                                    >
+                                      ...
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="border-bottom"></div>
+                                <div class="calenderBtns">
+                                  <div>
+                                    <button type="button" class="btn">
+                                      Cancel
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button type="button" class="btn applyBtn">
+                                      Apply
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-responsive borderRadius">
+                      <table class="table mb-0 table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Date</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row" class="text">
+                              <a href="">CLick to get conversion data</a>
+                            </td>
+                            <td class="text">Webhook</td>
+                            <td class="text">2022-2-18 21:30:21</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn ellipsisBtn"
+                                  type="button"
+                                  id="dropdownMenuButton3"
+                                  data-bs-toggle="dropdown"
+                                >
+                                  <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdownMenu">
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-bars-progress"></i
+                                      >View</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-chart-column"></i
+                                      >Statistics</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <i class="fa-solid fa-pencil"></i>Edit</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-code"></i>Install
+                                      Pixel</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Custom Branding</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-xmark"></i
+                                      >Delete</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="text">
+                              <a href="">CLick to get conversion data</a>
+                            </td>
+                            <td class="text">Webhook</td>
+                            <td class="text">2022-2-18 21:30:21</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn ellipsisBtn"
+                                  type="button"
+                                  id="dropdownMenuButton4"
+                                  data-bs-toggle="dropdown"
+                                >
+                                  <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                                <ul
+                                  class="dropdown-menu dropdownMenu dropdownMenu2"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-bars-progress"></i
+                                      >View</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-chart-column"></i
+                                      >Statistics</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <i class="fa-solid fa-pencil"></i>Edit</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-code"></i>Install
+                                      Pixel</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Custom Branding</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      ><i class="fa-solid fa-xmark"></i
+                                      >Delete</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

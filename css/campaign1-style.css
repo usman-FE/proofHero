@@ -1,0 +1,1204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  padding-right: 0 !important;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 1rem !important;
+  padding-bottom: 0;
+  box-shadow: 0px 2px 0px 0px #e4e4e4;
+  background-color: #ffffff;
+}
+
+header nav .logo {
+  width: 150px;
+}
+
+header nav .navbar-collapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+
+header nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user,
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  background-color: #f1f1f1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarRight span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999090;
+}
+
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.1rem;
+}
+
+header nav .dropdownList .dropdownMenu {
+  box-shadow: 0px 5px 10px #eaeaea;
+  border: 3px solid #d8d8d8;
+  left: 6%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header nav .dropdownList .dropdownMenu li {
+  margin: 0.1rem 0;
+}
+
+header nav .dropdownList .dropdownMenu li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+header nav .dropdownList .dropdownMenu li a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav {
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #e4e6eb;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarTop {
+  display: none;
+}
+
+header nav .navbar-collapse .navbarNav li {
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav li a {
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.4rem;
+  color: #717273;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a.active {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover::before,
+header nav .navbar-collapse .navbarNav li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main .content {
+  display: flex;
+}
+
+main aside .leftSideBar {
+  width: 100px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 90px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover {
+  width: 200px;
+}
+
+main aside .leftSideBar span {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover span {
+  opacity: 1;
+  display: inline;
+}
+
+main aside .leftSideBar ul {
+  padding: 0;
+  margin: 0;
+}
+
+main aside .leftSideBar ul li {
+  list-style: none;
+  margin-left: 34px;
+  position: relative;
+}
+
+main aside .leftSideBar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #717273;
+  height: 70px;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a i {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+}
+
+main aside .leftSideBar ul li a::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -11px;
+  width: 4px;
+  border-radius: 20px;
+  height: 100%;
+  opacity: 0;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a.active::before,
+main aside .leftSideBar ul li a:hover::before {
+  opacity: 1;
+}
+
+main aside .leftSideBar ul li a.active,
+main aside .leftSideBar ul li a:hover {
+  color: #d82128;
+}
+
+main .mainContent {
+  width: 100%;
+  margin-top: calc(90px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .topText {
+  margin-bottom: 1.5rem;
+}
+
+main .mainContent .topText ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .topText ul li {
+  list-style: none;
+  margin: 0 0.8rem;
+}
+
+main .mainContent .topText ul li:first-child {
+  margin-left: 0;
+}
+
+main .mainContent .topText ul li i,
+main .mainContent .topText ul li a,
+main .mainContent .campaign1 .domainText {
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+
+main .mainContent .topText ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+main .mainContent .topText ul li a:hover,
+main .mainContent ul li a.active {
+  color: black;
+}
+
+main .mainContent .campaign1,
+main .mainContent .tabPane {
+  border-radius: 0.9rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+main .mainContent .alignment {
+  align-items: center;
+}
+main .mainContent .tabPane {
+  padding: 1.2rem;
+}
+
+main .mainContent .campaign1 .campaignText,
+main .mainContent .tabPane h5 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+main .mainContent .campaign1 .campaignFlex,
+main .mainContent .campaign1 .switchAndDotsBtn {
+  padding: 1.2rem;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn {
+  justify-content: flex-end;
+}
+
+main .mainContent .campaign1 .dropdownMenu {
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  border: 0;
+}
+
+main .mainContent .campaign1 .dropdownMenu li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+main .mainContent .campaign1 .dropdownMenu li a i {
+  margin-right: 0.5rem;
+}
+
+main .mainContent .campaign1 .faImage i {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  background-color: #e4e6eb;
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn .checkInput,
+main .mainContent .table .checkInput {
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+main .mainContent .textEnd {
+  text-align: end;
+  padding-top: 1rem;
+}
+
+main .mainContent .installedBtn button {
+  color: #d82128;
+  font-weight: 600;
+  padding: 0;
+  position: relative;
+  margin-right: 1.2rem;
+}
+
+main .mainContent .installedBtn button .redDot {
+  background-color: #d82128;
+  width: 13px;
+  height: 13px;
+  margin-left: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  transform: translateY(0.1rem);
+  position: relative;
+  z-index: 1;
+}
+
+main .mainContent .installedBtn button .redDot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translate(-0.3rem, -0.3rem);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(216, 33, 40, 0.2);
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn .checkInput:focus,
+main .mainContent .table .checkInput:focus,
+main .mainContent .dropdownMenuForm input:focus,
+main .mainContent .dropdownMenuForm select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%) !important;
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn .checkInput:checked,
+main .mainContent .table .checkInput:checked {
+  background-color: #d82128;
+  border-color: #d82128;
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn .ellipsisBtn,
+main .mainContent .table .ellipsisBtn,
+main .mainContent .tabPane .filterBtn {
+  background-color: #e4e6eb;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 6px;
+  padding: 0.309rem 0.95rem;
+  margin-left: 1rem;
+  transition: all 0.25s ease;
+}
+
+main .mainContent .campaign1 .switchAndDotsBtn .ellipsisBtn:hover,
+main .mainContent .table .ellipsisBtn:hover,
+main .mainContent .tabPane .filterBtn:hover {
+  background-color: #d6d7da;
+}
+
+main .mainContent .navTabs {
+  margin-bottom: 0 !important;
+  margin-top: 1rem;
+  border-top: 1px solid #ededed;
+  border-bottom: 0;
+}
+
+main .mainContent .navTabs .tabsBtn {
+  width: 50%;
+  position: relative;
+  color: #717273;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+main .mainContent .navTabs .tabsBtn .fa-chevron-up {
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  font-size: 18px;
+  display: none;
+}
+main .mainContent .navTabs .tabsBtn.active {
+  color: #d82128;
+}
+main .mainContent .navTabs .tabsBtn.active .fa-chevron-up {
+  display: none;
+}
+main .mainContent .navTabs .tabsBtn i {
+  margin-right: 0.6rem;
+}
+
+main .mainContent .campaign1 .navTabs .statisticsIcon {
+  fill: #717273;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-top: 0.1rem;
+  margin-right: 0.4rem;
+  transition: all 0.15s ease-in-out;
+}
+
+main .mainContent .campaign1 .navTabs .tabsBtn.active .statisticsIcon {
+  fill: #d82128;
+}
+
+main .mainContent .statistics .dropdownMenu {
+  min-width: 30rem;
+  z-index: 1;
+  border: 0;
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  inset: 12px 0px auto auto !important;
+}
+
+main .mainContent .statistics .dropdownMenu .arrow {
+  position: absolute;
+  top: -7.5px;
+  left: 8.2rem;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+main .mainContent .statistics .navPills .navLink {
+  color: #000000;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-right: 0;
+  border-radius: unset;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+main .mainContent .statistics .navPills .navLink.active {
+  background-color: #d82128;
+  color: white;
+}
+
+main .mainContent .statistics .tabContent .tabPane {
+  padding: 0;
+  text-align: center;
+}
+
+main .mainContent .statistics .tabContent .tabPane h6 {
+  margin: 0.5rem 0 0.9rem 0;
+  color: #000000;
+  font-weight: 600;
+}
+
+main .mainContent .statistics .tabContent .tableCalendar {
+  margin-bottom: 0;
+}
+
+main .mainContent .statistics .tabContent .tableCalendar tbody,
+main .mainContent .statistics .tabContent .tableCalendar td,
+main .mainContent .statistics .tabContent .tableCalendar th,
+main .mainContent .statistics .tabContent .tableCalendar thead,
+main .mainContent .statistics .tabContent .tableCalendar tr {
+  border-width: 0;
+}
+
+main .mainContent .statistics .tabContent .tableCalendar thead th {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+main .mainContent .statistics .tabContent .tableCalendar tbody td {
+  color: #8f8f8f;
+  text-decoration: line-through;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+main .mainContent .statistics .tabContent .tableCalendar tbody td:hover,
+main .mainContent .statistics .tabContent .tableCalendar tbody td.active {
+  background-color: #d82128;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+main .mainContent .statistics .calenderBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+main .mainContent .statistics .calenderBtns button {
+  font-weight: 600;
+}
+
+main .mainContent .statistics .calenderBtns .applyBtn {
+  background-color: #d82128;
+  color: white;
+}
+
+main .mainContent .navTabs .tabsBtn.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #d82128;
+  left: 0;
+  bottom: -4px;
+}
+
+main .mainContent .tabPane .marginBottom {
+  margin-bottom: 0.8rem;
+}
+
+main .mainContent .tabPane .filterBtn {
+  margin-left: 0;
+  margin-right: 0.4rem;
+}
+
+main .mainContent .dropdownMenuForm {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  left: -16.4rem !important;
+  min-width: 20rem;
+  max-height: 21rem;
+  padding: 0;
+  border: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main .mainContent .dropdownMenuForm::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f3f2f2;
+}
+
+main .mainContent .dropdownMenuForm::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
+main .mainContent .dropdownMenuForm::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #b6b6b6;
+}
+
+main .mainContent .dropdownMenuForm .filterText h6 {
+  color: #8f8f8f;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+main .mainContent .dropdownMenuForm .formInputs,
+main .mainContent .dropdownMenuForm .filterText h6 {
+  padding: 0.8rem 1rem;
+}
+
+main .mainContent .dropdownMenuForm input,
+main .mainContent .dropdownMenuForm select {
+  border-color: #d6d7da;
+  color: #8f8f8f;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+main .mainContent .dropdownMenuForm .mb {
+  margin-bottom: 1.2rem;
+}
+
+main .mainContent .dropdownMenuForm label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+main .mainContent .tabPane .filterBtnLeft {
+  display: block;
+}
+
+main .mainContent .tabPane .filterBtnRight {
+  display: none;
+}
+
+.campaignsBox .tabPane .filterBtn i {
+  margin-top: 0.3rem;
+}
+
+main .mainContent .tabPane .createBtn {
+  background-color: #d82128;
+  color: white;
+  border: 2px solid #d82128;
+  font-weight: 400;
+  padding: 0.29rem 0;
+  width: 205px;
+  border-radius: 7px !important;
+  transition: all 0.25s ease-out;
+}
+
+main .mainContent .tabPane .createBtn:hover {
+  background-color: white;
+  color: #d82128;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+main .mainContent .tabPane .textEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .mainContent .tabPane button {
+  border-radius: 6px;
+}
+
+main .mainContent .borderRadius {
+  border-radius: 13px;
+  border: 3px solid #f0f2f5;
+}
+
+main .mainContent .table {
+  overflow: hidden;
+}
+
+main .mainContent .table .dropdownMenu {
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  border: 0;
+  inset: unset !important;
+  top: -5rem !important;
+  left: -10.5rem !important;
+  transform: translate(0, 0) !important;
+}
+
+main .mainContent .table .dropdownMenu.dropdownMenu2 {
+  top: -9rem !important;
+  left: -11.5rem !important;
+}
+
+main .mainContent .table .dropdownMenu li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+main .mainContent .table .dropdownMenu li a i {
+  margin-right: 0.5rem;
+}
+
+main .mainContent .table .tableNotifications {
+  display: flex;
+  align-items: center;
+  margin-left: 0.8rem;
+}
+
+main .mainContent .table .tableNotifications .campaignsImage {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+}
+
+main .mainContent .table .tableNotifications .notification {
+  color: #d82128;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main .mainContent .table .domainText a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+
+main .mainContent .table > :not(caption) > * > * {
+  padding: 1rem;
+}
+
+main .mainContent .table .text {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+main .mainContent .table tbody {
+  border-top: 0;
+  cursor: pointer;
+}
+
+main .mainContent .table tr {
+  vertical-align: middle;
+}
+
+main .mainContent .table .ellipsisBtn {
+  margin-left: 0;
+}
+
+main .mainContent .table .tableNotifications .domainText {
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+
+main .mainContent .bottomText {
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  color: #8f8f8f;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn {
+  color: #d82128;
+  border: 2px solid #d82128;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn i:first-child {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+main .mainContent .statisticsTabPane .calenderBtn i:last-child {
+  margin-left: 0.7rem;
+}
+
+main .mainContent .statisticsTabPane .calenderEnd {
+  text-align: right;
+}
+
+main .mainContent .grayBg {
+  border-radius: 6px;
+  padding: 0.8rem;
+  background-color: #f1f1f1;
+}
+
+main .mainContent .grayBg .grayBgText {
+  display: flex;
+  align-items: center;
+}
+
+main .mainContent .grayBg .grayBgText h6 {
+  font-weight: 600;
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+main .mainContent .grayBg .grayBgText .icon {
+  border-radius: 6px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.7rem;
+  background-color: white;
+}
+
+main .mainContent .grayBg .grayBgText .icon img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+main .mainContent .grayBg .grayBgText p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+main .mainContent .graph {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #b6b6b6;
+  border-left: 1px solid #b6b6b6;
+  min-height: 200px;
+  margin: 0 2rem;
+  position: relative;
+}
+
+main .mainContent .graphImg h6,
+main .mainContent .graphImg2 h6 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .mainContent .graphImg h6 span,
+main .mainContent .graphImg2 h6 span,
+main .mainContent .graph3 h6 span {
+  width: 60px;
+  height: 22px;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main .mainContent .graphImg h6 span {
+  background-color: #044389;
+}
+
+main .mainContent .graphImg2 h6 span {
+  background-color: #3bb273;
+}
+
+main .mainContent .graphImg3 h6 span {
+  background-color: #59a5db;
+}
+
+main .mainContent .graphImg4 h6 span {
+  background-color: #558b6e;
+}
+
+main .mainContent .graphImg h6 span::before,
+main .mainContent .graphImg2 h6 span::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main .mainContent .graph2 {
+  margin-top: 3rem;
+}
+
+main .mainContent .graph div {
+  position: absolute;
+  left: -17px;
+}
+
+main .mainContent .graph div span {
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #044389;
+  display: inline-block;
+}
+
+main .mainContent .graph div:nth-child(1) {
+  top: -8px;
+}
+
+main .mainContent .graph div:nth-child(2) {
+  top: 84px;
+}
+
+main .mainContent .graph div:nth-child(2) span,
+main .mainContent .graph2 div:nth-child(1) span {
+  right: -17px;
+}
+
+main .mainContent .graph div:nth-child(3) {
+  bottom: -9px;
+}
+
+main .mainContent .graph div:nth-child(3) span,
+main .mainContent .graph2 div:nth-child(2) span {
+  right: -12px;
+}
+
+main .mainContent .text {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0.5rem 0 0.5rem -0.5rem;
+}
+
+.modalBox {
+  background-color: rgba(237, 238, 241, 0.3);
+}
+
+.modalBox .modalContent {
+  border: 0;
+  border-radius: 1rem;
+  padding: 2rem 0 2rem 1.7rem;
+}
+
+.modalBox .modalContent .modalTop {
+  padding: 0;
+  border-bottom: 0;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.modalBox .modalContent .modalTitle {
+  color: black;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.modalBox .modalCloseBtn {
+  background-color: #ebebeb !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.9rem;
+  padding-top: 0.9rem;
+  background: unset;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 0;
+  height: 0;
+  top: 8px;
+  right: 20px;
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+
+.modalBox .modalBody {
+  padding: 0;
+  padding-right: 1.8rem;
+}
+
+.modalBox .modalBody h6 {
+  color: rgb(0, 0, 173);
+  opacity: 0.9;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.modalBox .modalBody p {
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.modalBox .modalBody .grayBox {
+  background-color: #f0f2f6;
+  width: 100%;
+  height: 130px;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  overflow-x: scroll;
+}
+
+.modalBox .modalCopyBtn {
+  background-color: #d82128;
+  border: 2px solid #d82128;
+  color: white;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.modalBox .mb {
+  margin-bottom: 1rem;
+}
+
+.modalBox .modalCopyBtn:hover {
+  background-color: white;
+  color: #d82128 !important;
+}
+
+.modalBox .mt {
+  margin-top: 1rem;
+}
+
+.modalBox .proofHeroAdd {
+  text-decoration: none;
+  color: #d82128;
+}
+
+.modalBox .installedBtn {
+  border: 2px solid rgb(0, 160, 99);
+  color: rgb(0, 160, 99);
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  header nav .dropdownList {
+    display: none;
+  }
+
+  main .leftSideBar {
+    transform: translateX(-110px);
+    transition: all 0.4s ease;
+    margin-top: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  header nav .navbar-collapse .navbarTop,
+  header nav .sideBarBtn,
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  main .mainContent {
+    margin-left: 0;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+  main .mainContent .topText {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main .mainContent .tabPane .filterBtnRight {
+    display: block;
+    margin-left: 0.3rem;
+  }
+
+  main .mainContent {
+    margin-top: calc(90px + 3rem);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main .mainContent .tabPane .campaignsText {
+    margin-bottom: 0.8rem;
+  }
+
+  main .mainContent .tabPane .textEnd {
+    justify-content: flex-start;
+  }
+
+  main .mainContent .tabPane .filterBtnLeft {
+    display: none;
+  }
+
+  main .mainContent .tabPane .notificationBtn,
+  main .mainContent .tabPane .notificationBtn .createBtn {
+    width: 100%;
+  }
+
+  main .mainContent .statisticsTabPane .calenderEnd {
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  main .mainContent .arrowBold,
+  main .mainContent .textBold {
+    margin-left: 0;
+  }
+
+  main .mainContent .tabPane .filterBtn,
+  main .mainContent .accordion .filterBtn {
+    margin-right: 0;
+  }
+
+  main .mainContent .table .tableNotifications {
+    margin-left: 0;
+  }
+
+  main .mainContent .table .dNone {
+    display: none;
+  }
+  main .mainContent .alignment {
+    align-items: flex-start;
+  }
+  main .mainContent .installedBtn button {
+    font-size: 0.8rem;
+  }
+  main .mainContent .campaignFlex h5 {
+    width: 11rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 500px) {
+  main .mainContent .topText ul li a {
+    font-size: 0.7rem;
+  }
+
+  main .mainContent .topText ul li {
+    margin: 0 0.4rem;
+  }
+
+  main .mainContent .statistics .dropdownMenu {
+    min-width: 10rem;
+  }
+  main .mainContent .campaign1 .campaignFlex,
+  main .mainContent .campaign1 .switchAndDotsBtn {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  main .mainContent .installedBtn button {
+    margin-right: 1rem;
+  }
+  main .mainContent .campaign1 .switchAndDotsBtn .ellipsisBtn {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-left: 0.5rem;
+  }
+  main .mainContent .campaign1 .faImage i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+  }
+}

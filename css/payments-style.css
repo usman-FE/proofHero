@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 1rem !important;
+  padding-bottom: 0;
+  box-shadow: 0px 2px 0px 0px #e4e4e4;
+  background-color: #ffffff;
+}
+
+header nav .logo {
+  width: 150px;
+}
+
+header nav .navbar-collapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+
+header nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user,
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  background-color: #f1f1f1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarRight span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999090;
+}
+
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.1rem;
+}
+
+header nav .dropdownList .dropdownMenu {
+  box-shadow: 0px 5px 10px #eaeaea;
+  border: 3px solid #d8d8d8;
+  left: 6%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header nav .dropdownList .dropdownMenu li {
+  margin: 0.1rem 0;
+}
+
+header nav .dropdownList .dropdownMenu li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+header nav .dropdownList .dropdownMenu li a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav {
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #e4e6eb;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarTop {
+  display: none;
+}
+
+header nav .navbar-collapse .navbarNav li {
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav li a {
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.4rem;
+  color: #717273;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a.active {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover::before,
+header nav .navbar-collapse .navbarNav li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main .content {
+  display: flex;
+}
+
+main aside .leftSideBar {
+  width: 100px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 90px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover {
+  width: 200px;
+}
+
+main aside .leftSideBar span {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover span {
+  opacity: 1;
+  display: inline;
+}
+
+main aside .leftSideBar ul {
+  padding: 0;
+  margin: 0;
+}
+
+main aside .leftSideBar ul li {
+  list-style: none;
+  margin-left: 34px;
+  position: relative;
+}
+
+main aside .leftSideBar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #717273;
+  height: 70px;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a i {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+}
+
+main aside .leftSideBar ul li a::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -11px;
+  width: 4px;
+  border-radius: 20px;
+  height: 100%;
+  opacity: 0;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a.active::before,
+main .mainContent .links ul li a.active::before,
+main .mainContent .links ul li a:hover:before,
+main aside .leftSideBar ul li a:hover::before {
+  opacity: 1;
+}
+
+main aside .leftSideBar ul li a.active,
+main .mainContent .links ul li a.active,
+main aside .leftSideBar ul li a:hover {
+  color: #d82128;
+}
+
+main .mainContent {
+  width: 100%;
+  margin-top: calc(90px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+
+main .mainContent .accountPayments,
+main .mainContent .topBox {
+  border-radius: 0.9rem;
+  background-color: white;
+}
+main .mainContent .topBox {
+  margin-bottom: 1rem;
+}
+main .mainContent .accountPayments.padding,
+main .mainContent .topBox .padding {
+  padding: 1.2rem;
+}
+main .mainContent .accountPayments .paymentsText {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+main .mainContent .accountPayments .paymentsPara {
+  color: #717273;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+main .mainContent .accountPayments .dFlex {
+  display: flex;
+  justify-content: space-between;
+}
+main .mainContent .accountPayments .grayIcons {
+  display: flex;
+  align-items: center;
+}
+main .mainContent .accountPayments .me {
+  margin-right: 0.4rem;
+}
+main .mainContent .accountPayments .dFlex .grayBtn {
+  background-color: #e4e6eb;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 6px;
+  padding: 0.309rem 0.95rem;
+  transform: rotate(0);
+  transition: all 0.25s ease;
+}
+main .mainContent .accountPayments .fa-arrow-right-to-bracket {
+  transform: rotate(90deg);
+}
+main .mainContent .accountPayments .grayBtn:hover {
+  background-color: #d6d7da;
+}
+main .mainContent .borderRadius {
+  border: 3px solid #f0f2f5;
+  border-radius: 13px;
+  margin-top: 1.7rem;
+}
+main .mainContent .table {
+  overflow: hidden;
+}
+main .mainContent .table tr {
+  vertical-align: middle;
+  cursor: pointer;
+}
+main .mainContent .table tbody {
+  border-top: 0;
+}
+main .mainContent .table > :not(caption) > * > * {
+  padding: 1rem 2rem;
+}
+main .mainContent .table .fontBold {
+  font-weight: 600;
+}
+main .mainContent .table .textGreen {
+  color: #3bb273;
+  font-weight: 500;
+}
+main .mainContent .table .fontNormal {
+  color: #717273;
+  font-weight: 500;
+  line-height: 0.9;
+}
+main .mainContent .table .bgGreen {
+  color: #267338;
+  background-color: #c6eccf;
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border-radius: 4px;
+  float: right;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+main .mainContent .accountPayments .bottomText p {
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-left: 0;
+  color: #8f8f8f;
+}
+main .mainContent .topBox .ahsanImageText {
+  display: flex;
+  align-items: center;
+}
+main .mainContent .topBox .faImage {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+}
+main .mainContent .topBox .faImage i {
+  font-size: 1.6rem;
+}
+main .mainContent .topBox .ahsanText {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+main .mainContent .topBox .planBtn {
+  color: #6c9f83;
+  background-color: #c0e6d2;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.2rem 1.1rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+main .mainContent .topBox .textEnd {
+  text-align: right;
+}
+main .mainContent .owl-carousel .owl-stage-outer {
+  overflow: unset;
+  border-top: 1px solid #e4e4e4 !important;
+}
+main .mainContent .topBox .owl-carousel .item {
+  width: 400px;
+}
+main .mainContent .topBox .owl-carousel i {
+  margin-right: 0.5rem;
+}
+main .mainContent .topBox .owl-carousel a {
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  color: #717273;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+main .mainContent .topBox .owl-carousel a:hover,
+main .mainContent .topBox .owl-carousel a.active {
+  color: #d82128;
+}
+.topBox .owl-carousel a:hover:before,
+.topBox .owl-carousel a.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #d82128;
+}
+.topBox .owl-carousel a:hover::before {
+  bottom: -4px;
+}
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  header nav .dropdownList {
+    display: none;
+  }
+
+  main .leftSideBar {
+    transform: translateX(-110px);
+    transition: all 0.4s ease;
+    margin-top: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  header nav .navbar-collapse .navbarTop {
+    display: block;
+  }
+
+  header nav .sideBarBtn {
+    display: block;
+  }
+
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+
+  main .mainContent {
+    margin-top: calc(90px + 3rem);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main .mainContent .accountContentTop .planBtn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .mainContent .accountContentTop .textEnd {
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  main .mainContent .links ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .mainContent .accountPayments .dFlex {
+    flex-direction: column;
+  }
+  main .mainContent .accountPayments .paymentsPara {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  main .mainContent .table > :not(caption) > * > * {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  main .mainContent .topBox .textEnd {
+    text-align: left;
+  }
+  main .mainContent .topBox .planBtn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  main .mainContent .topBox .owl-carousel a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  padding-right: 0 !important;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 1rem !important;
+  padding-bottom: 0;
+  box-shadow: 0px 2px 0px 0px #e4e4e4;
+  background-color: #ffffff;
+}
+
+header nav .logo {
+  width: 150px;
+}
+
+header nav .navbar-collapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+
+header nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user,
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  background-color: #f1f1f1;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbar-collapse .navbarRight .userBtn .fa-user {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+header nav .navbar-collapse .navbarRight span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999090;
+}
+
+header nav .navbar-collapse .navbarRight .fa-chevron-down {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.1rem;
+}
+
+header nav .dropdownList .dropdownMenu {
+  box-shadow: 0px 5px 10px #eaeaea;
+  border: 3px solid #d8d8d8;
+  left: 6%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header nav .dropdownList .dropdownMenu li {
+  margin: 0.1rem 0;
+}
+
+header nav .dropdownList .dropdownMenu li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+header nav .dropdownList .dropdownMenu li a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav {
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #e4e6eb;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+header nav .navbar-collapse.collapsing {
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarTop {
+  display: none;
+}
+
+header nav .navbar-collapse .navbarNav li {
+  margin-right: 0.7rem;
+}
+
+header nav .navbar-collapse .navbarNav li a {
+  color: #717273;
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a.active {
+  color: #d82128;
+}
+
+header nav .navbar-collapse .navbarNav li a:hover::before,
+header nav .navbar-collapse .navbarNav li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main .content {
+  display: flex;
+}
+
+main aside .leftSideBar {
+  background-color: white;
+  width: 100px;
+  min-height: 100vh;
+  padding-top: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover {
+  width: 200px;
+}
+
+main aside .leftSideBar span {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main aside .leftSideBar:hover span {
+  opacity: 1;
+  display: inline;
+}
+
+main aside .leftSideBar ul {
+  padding: 0;
+  margin: 0;
+}
+
+main aside .leftSideBar ul li {
+  list-style: none;
+  margin-left: 34px;
+  position: relative;
+}
+
+main aside .leftSideBar ul li a {
+  color: #717273;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  height: 70px;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a i {
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+}
+
+main aside .leftSideBar ul li a::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -11px;
+  width: 4px;
+  border-radius: 20px;
+  height: 100%;
+  opacity: 0;
+  background-color: #d82128;
+  transition: all 0.3s ease-in-out;
+}
+
+main aside .leftSideBar ul li a.active::before,
+main aside .leftSideBar ul li a:hover::before {
+  opacity: 1;
+}
+
+main aside .leftSideBar ul li a.active,
+main aside .leftSideBar ul li a:hover {
+  color: #d82128;
+}
+main .mainContent {
+  width: 100%;
+  margin-top: calc(90px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+main .mainContent .campaignsBox {
+  background-color: white;
+  border-radius: 13px;
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+main .mainContent .campaignsBox .campaignsText h5 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  padding-top: 0.3rem;
+}
+main .mainContent .campaignsBox .marginBottom {
+  margin-bottom: 0.8rem;
+}
+main .mainContent .campaignsBox .textEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+main .mainContent .campaignsBox .filterBtnLeft {
+  display: block;
+}
+main .mainContent .campaignsBox .filterBtnRight {
+  display: none;
+}
+main .mainContent .campaignsBox .filterBtn {
+  margin-left: 0;
+  margin-right: 0.4rem;
+}
+main .mainContent .campaignsBox .createBtn {
+  background-color: #d82128;
+  color: white;
+  border: 2px solid #d82128;
+  font-weight: 400;
+  padding: 0.29rem 0;
+  width: 205px;
+  border-radius: 7px !important;
+  transition: all 0.25s ease-out;
+}
+main .mainContent .table .checkInput:checked {
+  background-color: #d82128;
+  border-color: #d82128;
+  width: 2.4rem;
+  cursor: pointer;
+}
+main .mainContent .campaignsBox .createBtn:hover {
+  background-color: white;
+  color: #d82128;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+main .mainContent .campaignsBox .filterBtn {
+  margin-left: 0;
+  margin-right: 0.4rem;
+}
+main .mainContent .dropdownMenuForm {
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  left: -16.4rem !important;
+  min-width: 20rem;
+  max-height: 21rem;
+  padding: 0;
+  border: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+main .mainContent .dropdownMenuForm::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f3f2f2;
+}
+
+main .mainContent .dropdownMenuForm::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
+main .mainContent .dropdownMenuForm::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #b6b6b6;
+}
+main .mainContent .dropdownMenuForm .formInputs,
+main .mainContent .dropdownMenuForm .filterText h6 {
+  padding: 0.8rem 1rem;
+}
+main .mainContent .dropdownMenuForm .filterText h6 {
+  color: #8f8f8f;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+main .mainContent .dropdownMenuForm .formInputs,
+main .mainContent .dropdownMenuForm .filterText h6 {
+  padding: 0.8rem 1rem;
+}
+main .mainContent .dropdownMenuForm .mb {
+  margin-bottom: 1.2rem;
+}
+main .mainContent .dropdownMenuForm label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+main .mainContent .dropdownMenuForm input,
+main .mainContent .dropdownMenuForm select {
+  border-color: #d6d7da;
+  color: #8f8f8f;
+  border-radius: 6px;
+  font-weight: 500;
+}
+main .mainContent .dropdownMenuForm input:focus,
+main .mainContent .dropdownMenuForm select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%) !important;
+}
+
+main .mainContent .borderRadius {
+  border-radius: 13px;
+  border: 3px solid #f0f2f5;
+}
+main .mainContent .table {
+  overflow: hidden;
+}
+main .mainContent .table tr {
+  vertical-align: middle;
+}
+main .mainContent .table > :not(caption) > * > * {
+  padding: 1rem;
+}
+main .mainContent .table tbody {
+  border-top: 0;
+  cursor: pointer;
+}
+main .mainContent .table .tableNotifications {
+  display: flex;
+  align-items: center;
+  margin-left: 0.8rem;
+}
+main .mainContent .table .tableNotifications .campaignsImage {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+}
+main .mainContent .table .tableNotifications .notification {
+  color: #d82128;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .mainContent .table .tableNotifications .domainText {
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+main .mainContent .table .domainText a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+main .mainContent .table .text {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+main .mainContent .table .ellipsisBtn {
+  margin-left: 0;
+}
+main .mainContent .table .ellipsisBtn,
+main .mainContent .campaignsBox .filterBtn {
+  background-color: #e4e6eb;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 6px;
+  padding: 0.309rem 0.95rem;
+  margin-left: 1rem;
+  transition: all 0.25s ease;
+}
+main .mainContent .table .ellipsisBtn:hover,
+main .mainContent .campaignsBox .filterBtn:hover {
+  background-color: #d6d7da;
+}
+main .mainContent .table .dropdownMenu {
+  box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+  border: 0;
+  inset: unset !important;
+  top: -5rem !important;
+  left: -10.5rem !important;
+  transform: translate(0, 0) !important;
+}
+main .mainContent .table .dropdownMenu li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+main .mainContent .table .dropdownMenu.dropdownMenu2 {
+  top: -9rem !important;
+  left: -11.5rem !important;
+}
+main .mainContent .table .dropdownMenu li a i {
+  margin-right: 0.5rem;
+}
+main .mainContent .bottomText {
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  color: #8f8f8f;
+}
+@media (max-width: 992px) {
+  header nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  header nav .dropdownList {
+    display: none;
+  }
+
+  main .leftSideBar {
+    transform: translateX(-110px);
+    transition: all 0.4s ease;
+    margin-top: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  header nav .navbar-collapse .navbarTop,
+  header nav .sideBarBtn,
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  main .mainContent {
+    margin-left: 0;
+  }
+
+  header nav .dropdownList .dropdownMenu {
+    left: 0;
+  }
+}
+@media (max-width: 768px) {
+  main .mainContent .campaignsBox .filterBtnRight {
+    display: block;
+    margin-left: 0.3rem;
+  }
+  main .mainContent .campaignsBox .filterBtn {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  main .mainContent {
+    margin-top: calc(90px + 3rem);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .mainContent .campaignsBox .campaignsText {
+    margin-bottom: 0.8rem;
+  }
+
+  main .mainContent .campaignsBox .textEnd {
+    justify-content: flex-start;
+  }
+
+  main .mainContent .campaignsBox .filterBtnLeft {
+    display: none;
+  }
+
+  main .mainContent .campaignsBox .notificationBtn,
+  main .mainContent .campaignsBox .notificationBtn .createBtn {
+    width: 100%;
+  }
+  main .mainContent .table .dNone {
+    display: none;
+  }
+  main .mainContent .campaignsBox .campaignsText {
+    margin-bottom: 0.8rem;
+  }
+}

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  min-height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.headerTop .logo,
+.offcanvasSideBar .offcanvasLogo .logo {
+  width: 150px;
+}
+.headerTop nav .navbarToggler {
+  border: 0;
+  color: black !important;
+}
+.headerTop nav .navbarToggler span {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0.445rem 0;
+  border-radius: 20px;
+  opacity: 0.8;
+  background-color: black;
+}
+.headerTop nav .navbarCollapse .navLink {
+  color: #404047;
+  font-weight: 500;
+  margin: 0 1.8rem;
+  transition: all 0.25s ease;
+}
+.headerTop nav .navbarCollapse .navLink:hover {
+  color: #d82128;
+}
+.headerTop .navbarCollapse .navbarRight {
+  display: flex;
+  align-items: center;
+}
+.headerTop .navbarCollapse .navbarRightBtn {
+  border-color: #404047;
+  border-width: 2px;
+  font-weight: 500;
+  padding: 0.511rem 1.85rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+.headerTop .navbarCollapse .navbarRightBtn.active,
+.offcanvasSideBar .offcanvasBtn .navbarRightBtn.active {
+  color: white;
+  background-color: #d82128;
+  border-color: #d82128;
+}
+.headerTop .navbarCollapse .navbarRightBtn:hover {
+  background-color: #d82128;
+  border-color: #d82128;
+  color: white;
+}
+#contactProofHero {
+  padding-top: 4rem;
+  padding-left: 0.5rem;
+}
+#contactProofHero .contactText {
+  color: #404047;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+}
+#contactProofHero .inputLabel {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+#contactProofHero .formInput,
+#contactProofHero .formTextarea {
+  padding: 0.495rem 0.75rem;
+  border-radius: 0.49rem;
+  background-color: #f0f2f6;
+  border: 0;
+}
+#contactProofHero .formTextarea {
+  resize: none;
+}
+#contactProofHero .mb {
+  margin-bottom: 1.4rem;
+}
+#contactProofHero .formInput:focus,
+#contactProofHero .formTextarea:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%) !important;
+}
+#contactProofHero .submitBtn {
+  width: 100%;
+  color: white;
+  background-color: #d82128;
+  border: 2px solid #d82128;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  margin-top: 1.4rem;
+  transition: all 0.25s ease-out;
+}
+#contactProofHero .submitBtn:hover {
+  background-color: white;
+  color: #d82128;
+}
+#contactProofHero .messageDelivered {
+  color: #3bb273;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#contactProofHero .emojiImg {
+  width: 3.5%;
+  margin-left: 0.4rem;
+}
+.offcanvasSideBar .btnClose {
+  background-color: #ebebeb !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  padding: 0.9rem;
+  margin-right: 0rem;
+  background: unset;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+.offcanvasSideBar {
+  padding: 0.8rem;
+  width: 250px;
+  border-left: 0;
+  display: none;
+}
+.offcanvas-backdrop {
+  display: none;
+  background-color: #717273;
+}
+.offcanvasSideBar .offcanvasHeader {
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+.offcanvasSideBar .offcanvasBody li {
+  border-bottom: 1px solid #c2c2c2;
+}
+.offcanvasSideBar .offcanvasBody li a {
+  color: #404047;
+  padding: 1.3rem 0;
+}
+.offcanvasSideBar .offcanvasBtn .navbarRightBtn {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 1.3rem 0;
+}
+.offcanvasSideBar .offcanvasBtn .navbarRightBtn.active {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+}
+@media (max-width: 992px) {
+  .headerTop nav .navbarCollapse .navLink {
+    margin: 0;
+  }
+  .headerTop .navbarCollapse {
+    margin-left: 0.5rem;
+  }
+  #contactProofHero .emojiImg {
+    width: 10%;
+  }
+  .offcanvasSideBar,
+  .offcanvas-backdrop {
+    display: block;
+  }
+}

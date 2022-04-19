@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.logInForm {
+  position: relative;
+  min-height: 100vh;
+}
+.logInForm .formCenter {
+  margin-top: 4.1rem;
+}
+.logInForm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d82128;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+.logInForm form {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.logInForm form .formLogInText {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.logInForm .logo {
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+.logInForm .logo img {
+  width: 150px;
+}
+
+.logInForm form .formTopText {
+  margin: 1.2rem 0;
+  color: black;
+}
+
+.logInForm form .registerText {
+  text-decoration: none;
+  color: #d82128;
+}
+
+.logInForm form label {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.logInForm form .formFLex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logInForm form .lostPasswordText {
+  color: #d82128;
+  text-decoration: none;
+  padding: 0;
+}
+
+.logInForm form .formInput {
+  padding: 0.495rem 0.75rem;
+  border-radius: 0.49rem;
+  background-color: #f0f2f6;
+  border: 0;
+}
+.logInForm form .formInput:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216 33 40 / 20%);
+}
+.logInForm form .marginBottom {
+  margin-bottom: 1.4rem;
+}
+
+.logInForm form .formLabelMarginb {
+  margin-bottom: 0.5rem;
+}
+
+.logInForm form .formCheckLabel,
+.logInForm form .activationText a {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+  color: black;
+}
+
+.logInForm form .logInBtn {
+  margin-top: 1.2rem;
+}
+
+.logInForm form .logInBtn button {
+  color: white;
+  background-color: #d82128;
+  border: 2px solid #d82128;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  transition: all 0.25s ease-out;
+}
+
+.logInForm form .logInBtn button:hover {
+  background-color: white;
+  color: #d82128;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.logInForm form .activationText {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.logInForm form .activationText a {
+  text-decoration: none;
+}
