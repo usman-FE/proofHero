@@ -286,7 +286,7 @@ main .mainContent .alertBgColor {
 }
 main .mainContent .alertBgColor .btnClose {
   background-color: #ebebeb !important;
-  color: black;
+  color: #717273;
   display: flex;
   align-items: center;
   justify-content: center;
