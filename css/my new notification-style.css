@@ -728,6 +728,7 @@ main .mainContent .formTab p,
 
 .alertBottom .alertText {
   display: flex;
+  padding-right: 2.1rem;
 }
 
 .alertBottom .alertText h6 {
@@ -1345,6 +1346,10 @@ main .mainContent .chevronRight {
   main .mainContent .formBg {
     background-color: unset;
   }
+
+  .notification-preview-box {
+    width: 90% !important;
+  }
   /* main .mainContent .navTabs .tabsBtn,
   main .mainContent .accordionButton {
     background-color: #e4e5ea;
@@ -1437,4 +1442,66 @@ main .mainContent .chevronRight {
     padding-right: 0.75rem;
     margin-left: 0.5rem;
   }
+}
+
+.notification-preview-box {
+  padding: 2rem;
+  background-color: #f6f6f6;
+  justify-content: center;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  border-radius: 8px;
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 9999;
+  box-shadow: 5px 6px 5px #0000004a;
+  border: 1px solid #d8d8d8;
+  display: none;
+}
+.notification-preview-box .alertBottom {
+  max-width: 100%;
+}
+.previewCloseBtn {
+  background-color: #ebebeb !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: unset;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 20px;
+  opacity: 1;
+  transition: all 0.25s ease;
+  position: absolute;
+  top: 40%;
+  left: -15px;
+  z-index: 9999999;
+}
+
+.floating-eye {
+  cursor: pointer;
+  z-index: 9999;
+  background-color: #ebebeb !important;
+  color: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: unset;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 24%;
+  right: 5%;
+
+  box-shadow: 5px 6px 5px #0000004a;
+  border: 1px solid #d8d8d8;
 }
