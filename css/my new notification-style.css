@@ -934,6 +934,11 @@ main .mainContent .graph div {
   left: -17px;
 }
 
+.border-box {
+  height: 40px !important;
+  position: absolute !important;
+}
+
 main .mainContent .graph div span {
   position: absolute;
   top: 0;
