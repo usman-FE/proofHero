@@ -108,8 +108,8 @@ header nav .navbar-collapse .navbarRight .fa-chevron-down {
 }
 
 header nav .dropdownList .dropdownMenu {
-  box-shadow: 0px 5px 10px #eaeaea;
-  border: 3px solid #d8d8d8;
+  box-shadow: 5px 6px 5px #0000004a;
+  border: 1px solid #d8d8d8;
   left: 6%;
   overflow: hidden;
   border-radius: 20px;
@@ -350,8 +350,9 @@ main .mainContent .newNotification .createBtn:hover {
 }
 
 main .mainContent .informational {
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
-  border: 3px solid #f0f2f5;
+  box-shadow: 0 5px 10px -2px rgb(0 0 0 / 10%), 0 2px 2px -1px rgb(0 0 0 / 5%);
+  /* box-shadow: 5px 6px 5px #0000004a; */
+  border: 3px solid #d8d8d8;
   padding: 1.5rem;
   border-radius: 0.4rem;
   text-align: center;
@@ -383,22 +384,28 @@ main .mainContent .informational:hover img {
     brightness(82%) contrast(100%);
 }
 main .mainContent .informational h6 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
 }
 
 main .mainContent .informational p {
   color: #717273;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   line-height: 1.1rem;
   margin-top: 0.3rem;
-  font-weight: 500;
+  /* font-weight: 500; */
   transition: all 0.3s ease-in-out;
 }
 main .mainContent .informational:hover p {
   color: #d82128;
 }
+
+.active:first-child {
+  filter: invert(50%) sepia(100%) saturate(3000%) hue-rotate(346deg)
+    brightness(82%) contrast(100%);
+}
+
 .alertBottom {
   color: black;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08),
@@ -447,6 +454,33 @@ main .mainContent .informational:hover p {
     padding-right: 0 !important;
   }
 
+  .mob-nav {
+    right: 2%;
+    top: 50%;
+    box-shadow: 5px 6px 5px #0000004a;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .mob-nav-show {
+    display: block !important;
+  }
+
+  .mob-nav li {
+    margin: 0.1rem 0;
+  }
+
+  .mob-nav li a i {
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7rem;
+  }
+
+  .mob-nav li a {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
   header nav .dropdownList {
     display: none;
   }
@@ -489,6 +523,29 @@ main .mainContent .informational:hover p {
   main .mainContent .newNotification .textEnd {
     text-align: left;
     margin-top: 1rem;
+  }
+
+  .float-btn {
+    position: fixed;
+    bottom: 0%;
+    width: 95%;
+  }
+  .notification-preview {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  .notification-preview-box {
+    padding: 3rem;
+    background-color: #f6f6f6;
+    justify-content: center;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    border-radius: 8px;
+  }
+
+  .alertBottom {
+    max-width: 479px;
   }
 
   main .mainContent {
