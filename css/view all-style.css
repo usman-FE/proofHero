@@ -435,11 +435,6 @@ main .mainContent .table .tableNotifications .notification {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-
-  min-width: 107px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 main .mainContent .table .tableNotifications .domainText {
   color: #8f8f8f;
@@ -589,5 +584,15 @@ main .mainContent .bottomText {
   }
   main .mainContent .campaignsBox .campaignsText {
     margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main .mainContent .table .tableNotifications .notification {
+    width: 6.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
 }

@@ -108,8 +108,8 @@ header nav .navbar-collapse .navbarRight .fa-chevron-down {
 }
 
 header nav .dropdownList .dropdownMenu {
-  box-shadow: 0px 5px 10px #eaeaea;
-  border: 3px solid #d8d8d8;
+  box-shadow: 5px 6px 5px #0000004a;
+  border: 1px solid #d8d8d8;
   left: 6%;
   overflow: hidden;
   border-radius: 20px;
@@ -117,6 +117,11 @@ header nav .dropdownList .dropdownMenu {
 
 header nav .dropdownList .dropdownMenu li {
   margin: 0.1rem 0;
+}
+
+.notification-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 header nav .dropdownList .dropdownMenu li a {
@@ -398,18 +403,116 @@ main .mainContent .installedBtn button .redDot {
   z-index: 1;
 }
 
+/* .redDot:hover::before {
+  transform: scale(1.7) !important;
+  opacity: 0;
+} */
+
+@keyframes redBlinker {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
 main .mainContent .installedBtn button .redDot::before {
   content: "";
   position: absolute;
   top: 0;
-  transform: translate(-0.3rem, -0.3rem);
   left: 0;
-  right: 0;
-  bottom: 0;
-  width: 22px;
-  height: 22px;
+  width: 13px;
+  height: 13px;
+  transform-origin: center;
   border-radius: 50%;
-  background-color: rgba(216, 33, 40, 0.2);
+  background-color: #d82128;
+  transform: scale(1);
+  animation: redBlinker 0.8s infinite;
+  animation-fill-mode: backwards;
+}
+
+.lds-spinner {
+  color: #558b6e;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.lds-spinner div {
+  transform-origin: 10px 10px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0.75px;
+  left: 9.25px;
+  width: 1.5px;
+  height: 4.5px;
+  border-radius: 20%;
+  background: #558b6e;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 main .mainContent .campaign1 .switchAndDotsBtn .checkInput:focus,
@@ -593,7 +696,7 @@ main .mainContent .navTabs .tabsBtn.active::before {
   border-radius: 25px;
   background-color: #d82128;
   left: 0;
-  bottom: -4px;
+  bottom: 0px;
 }
 
 main .mainContent .tabPane .marginBottom {
@@ -685,7 +788,7 @@ main .mainContent .tabPane .createBtn {
 
 main .mainContent .tabPane .createBtn:hover {
   background-color: #b50f15;
-  border-color: #d82128;
+  border-color: #b50f15;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
@@ -767,7 +870,7 @@ main .mainContent .table > :not(caption) > * > * {
 }
 
 main .mainContent .table .text {
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #8f8f8f;
 }
 
@@ -790,7 +893,7 @@ main .mainContent .table .tableNotifications .domainText {
 }
 
 main .mainContent .bottomText {
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-top: 0.7rem;
   margin-left: 1rem;
   color: #8f8f8f;
@@ -954,7 +1057,7 @@ main .mainContent .graph2 div:nth-child(2) span {
 }
 
 main .mainContent .text {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 15px;
   margin: 0.5rem 0 0.5rem -0.5rem;
 }
@@ -979,7 +1082,7 @@ main .mainContent .text {
 .modalBox .modalContent .modalTitle {
   color: black;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .modalBox .modalCloseBtn {
@@ -988,14 +1091,12 @@ main .mainContent .text {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 0.9rem;
-  padding-top: 0.9rem;
   background: unset;
   border-radius: 50%;
   font-size: 1.1rem;
   font-weight: 600;
-  width: 0;
-  height: 0;
+  width: 30px;
+  height: 30px;
   top: 8px;
   right: 20px;
   opacity: 1;
@@ -1019,11 +1120,10 @@ main .mainContent .text {
   color: #8f8f8f;
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 500;
 }
 
 .modalBox .modalBody .grayBox {
-  background-color: #f0f2f6;
+  background-color: #f1f1f1;
   width: 100%;
   height: 130px;
   border-radius: 3px;
@@ -1059,14 +1159,41 @@ main .mainContent .text {
   color: #d82128;
 }
 
+.waiting-int {
+  background-color: #daf4e6;
+  border: none !important;
+  font-weight: 500;
+}
+
+.greenDot {
+  background-color: #3bb273;
+  width: 13px;
+  height: 13px;
+  margin-left: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pixel-installed {
+  color: #8f8f8f;
+  background-color: #f1f1f1;
+  font-weight: 500;
+}
+
+.dark-text {
+  color: #8f8f8f !important;
+}
+
 .modalBox .installedBtn {
-  border: 2px solid rgb(0, 160, 99);
-  color: rgb(0, 160, 99);
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 992px) {
@@ -1074,7 +1201,32 @@ main .mainContent .text {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .mob-nav {
+    right: 2%;
+    top: 50%;
+    box-shadow: 5px 6px 5px #0000004a;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .mob-nav-show {
+    display: block !important;
+  }
 
+  .mob-nav li {
+    margin: 0.1rem 0;
+  }
+
+  .mob-nav li a i {
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7rem;
+  }
+
+  .mob-nav li a {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
   header nav .dropdownList {
     display: none;
   }
@@ -1174,13 +1326,30 @@ main .mainContent .text {
   main .mainContent .topText ul li a {
     font-size: 0.7rem;
   }
+  main .mainContent .statistics .tabContent .tableCalendar tbody td {
+    padding: 0.3rem 0.7rem;
+  }
+  .small-cal {
+    margin: 0 auto;
+  }
+
+  main .mainContent .table .tableNotifications .notification {
+    width: 5.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
 
   main .mainContent .topText ul li {
     margin: 0 0.4rem;
   }
 
   main .mainContent .statistics .dropdownMenu {
-    min-width: 10rem;
+    /* min-width: 10rem; */
+    transform: translate3d(0px, 83px, 0px) !important;
+    min-width: 100%;
+    width: 100% !important;
   }
   main .mainContent .campaign1 .campaignFlex,
   main .mainContent .campaign1 .switchAndDotsBtn {
