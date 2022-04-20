@@ -288,7 +288,7 @@ main .mainContent .accountLogs .paymentsText {
 main .mainContent .accountLogs .paymentsPara {
   color: #999090;
   font-weight: 500;
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
 }
 main .mainContent .accountLogs .dFlex {
   display: flex;
@@ -296,7 +296,7 @@ main .mainContent .accountLogs .dFlex {
 }
 main .mainContent .accountLogs .grayIcons {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 main .mainContent .accountLogs .me {
   margin-right: 0.4rem;
@@ -334,9 +334,9 @@ main .mainContent .table tbody {
 main .mainContent .table > :not(caption) > * > * {
   padding: 1rem 2rem;
 }
-main .mainContent .table .fontBold {
+/* main .mainContent .table .fontBold {
   font-weight: 600;
-}
+} */
 main .mainContent .table .textGreen {
   color: #3bb273;
   font-weight: 500;
