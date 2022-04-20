@@ -114,3 +114,9 @@ button:focus,
     margin-left: 1rem;
   }
 }
+
+@media (max-width: 440px) {
+  .pageContent .maxWidth {
+    width: 100%;
+  }
+}
