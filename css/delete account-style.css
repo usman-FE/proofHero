@@ -448,6 +448,9 @@ main .mainContent .topBox .owl-carousel a.active {
     text-align: left;
     padding-top: 1rem;
   }
+  main .mainContent .topBox .owl-carousel .owl-item {
+    margin-right: 3rem;
+  }
   main .mainContent .links ul {
     flex-direction: column;
     align-items: flex-start;

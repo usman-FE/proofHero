@@ -510,7 +510,23 @@ main .mainContent .accordionButton:not(.collapsed)::before {
   border-radius: 25px;
   background-color: #d82128;
   left: 0;
-  bottom: -1px;
+  bottom: -5px;
+}
+
+.active-accord {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.active-accord::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #d82128;
+  left: 0;
+  bottom: -15px;
 }
 
 main .mainContent .navTabs .tabPane2.active::before {
@@ -1106,9 +1122,9 @@ main .mainContent .accordionTopBtn {
   align-items: center;
 }
 
-main .mainContent .accordionBtn {
+/* main .mainContent .accordionBtn {
   width: 20% !important;
-}
+} */
 
 main .mainContent .accordionTopBtn i {
   margin-right: 0.6rem;
@@ -1306,6 +1322,10 @@ main .mainContent .chevronRight {
     margin-bottom: 0.8rem;
   }
 
+  main .mainContent .accordionButton {
+    padding: 0;
+  }
+
   main .mainContent .tabPane .textEnd {
     justify-content: flex-start;
   }
@@ -1327,11 +1347,11 @@ main .mainContent .chevronRight {
     border-radius: 0.5rem;
   } */
 
-  main .mainContent .navTabs .tabsBtn,
+  /* main .mainContent .navTabs .tabsBtn,
   main .mainContent .accordionButtonmain,
   main .mainContent .accordionBtn {
     width: 100% !important;
-  }
+  } */
   /* main .mainContent .navTabs .tabsBtn.active,
   main .mainContent .accordionButton:not(.collapsed) {
     background-color: white;
@@ -1342,7 +1362,6 @@ main .mainContent .chevronRight {
   main .mainContent .accordionButton:not(.collapsed) .chevronRight {
     display: block;
   }
-  main .mainContent .navTabs .tabsBtn.active::before,
   main .mainContent .accordionButton:not(.collapsed)::before {
     content: none;
   }
@@ -1363,7 +1382,6 @@ main .mainContent .chevronRight {
   }
 
   main .mainContent .accordionButton {
-    min-width: 9rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1371,11 +1389,12 @@ main .mainContent .chevronRight {
   main .mainContent .chevronRight {
     display: none;
   }
-  main .mainContent .navTabs,
   main .mainContent .accordionTopBtn {
     margin-left: 1rem;
     margin-right: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
+    gap: 8vw;
   }
   main .mainContent .previewsTop {
     border-radius: 0;

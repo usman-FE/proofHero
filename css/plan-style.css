@@ -447,6 +447,7 @@ main .mainContent .owl-carousel .owl-stage-outer {
   overflow: unset;
   border-top: 1px solid #e4e4e4 !important;
 }
+
 main .mainContent .topBox .owl-carousel .item {
   width: 400px;
 }
@@ -525,6 +526,10 @@ main .mainContent .topBox .owl-carousel a.active {
   main .mainContent .accountContentTop .textEnd {
     text-align: left;
     padding-top: 1rem;
+  }
+
+  main .mainContent .topBox .owl-carousel .owl-item {
+    margin-right: 3rem;
   }
 
   main .mainContent {
