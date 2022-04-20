@@ -293,7 +293,7 @@ main .mainContent .accountPayments .paymentsText {
 main .mainContent .accountPayments .paymentsPara {
   color: #717273;
   font-weight: 500;
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
 }
 main .mainContent .accountPayments .dFlex {
   display: flex;
@@ -301,7 +301,7 @@ main .mainContent .accountPayments .dFlex {
 }
 main .mainContent .accountPayments .grayIcons {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 main .mainContent .accountPayments .me {
   margin-right: 0.4rem;
@@ -339,16 +339,16 @@ main .mainContent .table tbody {
 main .mainContent .table > :not(caption) > * > * {
   padding: 1rem 2rem;
 }
-main .mainContent .table .fontBold {
+/* main .mainContent .table .fontBold {
   font-weight: 600;
-}
+} */
 main .mainContent .table .textGreen {
   color: #3bb273;
   font-weight: 500;
 }
 main .mainContent .table .fontNormal {
   color: #717273;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 0.9;
 }
 main .mainContent .table .bgGreen {
