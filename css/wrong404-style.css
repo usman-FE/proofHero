@@ -97,6 +97,7 @@ button:focus,
   }
   .pageContent .maxWidth {
     margin: 0 auto;
+    width: 90%;
   }
 }
 @media (max-width: 578px) {
@@ -108,5 +109,8 @@ button:focus,
   }
   .pageContent .wrongText {
     font-size: 2.5rem;
+  }
+  .pageContent .helpCenterText {
+    margin-left: 1rem;
   }
 }
