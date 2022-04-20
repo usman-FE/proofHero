@@ -290,12 +290,28 @@ main .mainContent .affiliateProgram .affiliateText {
   margin-bottom: 2.3rem;
 }
 main .mainContent .affiliateProgram .affiliatePara {
-  color: #404047;
+  color: #717273;
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 2.7rem;
   line-height: 1.4;
 }
+
+.copyright-text {
+  text-align: center;
+  color: #717273;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.copy-link,
+.copy-link:link,
+.copy-link:visited {
+  color: #d82128;
+  text-decoration: none;
+}
+
 main .mainContent .affiliateProgram .receiveBtn {
   color: white;
   background-color: #d82128;
@@ -366,5 +382,8 @@ main .mainContent .affiliateProgram .receiveBtn:hover {
 @media (max-width: 576px) {
   main .mainContent .affiliateProgram .affiliateText {
     font-size: 1.6rem;
+  }
+  .img-fluid {
+    max-width: 50%;
   }
 }
