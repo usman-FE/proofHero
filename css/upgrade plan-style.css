@@ -582,8 +582,8 @@ main {
 
 @media (max-width: 678px) {
   main .mainContent .upgradePlanTopBgColor {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
