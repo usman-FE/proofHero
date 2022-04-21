@@ -700,6 +700,7 @@ main .mainContent .navTabs .tabsBtn.active::before {
   background-color: #d82128;
   left: 0;
   bottom: 0px;
+  transform: scaleX(0.94);
 }
 
 main .mainContent .table tbody tr:hover {
