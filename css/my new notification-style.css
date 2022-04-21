@@ -1356,9 +1356,9 @@ main .mainContent .chevronRight {
     text-align: left;
   }
 
-  main .mainContent .navTabs .tabsBtn:last-child.active {
+  /* main .mainContent .navTabs .tabsBtn:last-child.active {
     margin-top: 0.4rem;
-  }
+  } */
   main .mainContent .formBg {
     background-color: unset;
   }
@@ -1519,4 +1519,14 @@ main .mainContent .chevronRight {
 
   box-shadow: 5px 6px 5px #0000004a;
   border: 1px solid #d8d8d8;
+}
+
+@media (max-width: 450px) {
+  .nav-link {
+    padding: 0.5rem 0.2rem;
+  }
+  main .mainContent .navTabs .tabsBtn i,
+  main .mainContent .navTabs .statisticsIcon {
+    margin-right: 0.1rem;
+  }
 }
