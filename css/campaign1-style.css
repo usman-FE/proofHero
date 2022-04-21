@@ -699,6 +699,10 @@ main .mainContent .navTabs .tabsBtn.active::before {
   bottom: 0px;
 }
 
+main .mainContent .table tbody tr:hover {
+  background-color: #f6f6f6 !important;
+}
+
 main .mainContent .tabPane .marginBottom {
   margin-bottom: 0.8rem;
 }

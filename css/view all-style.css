@@ -119,6 +119,10 @@ header nav .dropdownList .dropdownMenu li {
   margin: 0.1rem 0;
 }
 
+main .mainContent .table tbody tr:hover {
+  background-color: #f6f6f6 !important;
+}
+
 header nav .dropdownList .dropdownMenu li a {
   font-weight: 500;
   font-size: 0.8rem;

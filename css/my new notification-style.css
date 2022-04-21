@@ -297,7 +297,9 @@ main .mainContent .topText ul li a {
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
-
+.m-right {
+  margin-right: 2rem;
+}
 main .mainContent .topText ul li i,
 main .mainContent .topText ul li a,
 main .mainContent .notification .domainText {
@@ -575,6 +577,10 @@ main .mainContent .calenderEnd .dropdownMenu .arrow {
   height: 15px;
   transform: rotate(45deg);
   background-color: white;
+}
+
+main .mainContent .table tbody tr:hover {
+  background-color: #f6f6f6 !important;
 }
 
 main .mainContent .calenderEnd .navPills .navLink {
@@ -1327,7 +1333,7 @@ main .mainContent .chevronRight {
     display: block;
     margin-left: 0.3rem;
   }
-  .accordionTopBtn {
+  .accordion-header-border {
     overflow-x: scroll;
   }
   main .mainContent {
@@ -1405,6 +1411,7 @@ main .mainContent .chevronRight {
 
   .accordion-header-border {
     border-top: 1px solid #f0f2f6;
+    border-bottom: 1px solid #f0f2f6;
   }
 
   main .mainContent .accordionButton {
@@ -1456,6 +1463,12 @@ main .mainContent .chevronRight {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     margin-left: 0.5rem;
+  }
+  .accordion-header-border {
+    transform: rotateX(180deg);
+  }
+  .accordionTopBtn {
+    transform: rotateX(180deg);
   }
 }
 

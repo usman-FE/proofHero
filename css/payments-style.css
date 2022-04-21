@@ -424,7 +424,6 @@ main .mainContent .topBox .owl-carousel a:hover,
 main .mainContent .topBox .owl-carousel a.active {
   color: #d82128;
 }
-.topBox .owl-carousel a:hover:before,
 .topBox .owl-carousel a.active::before {
   content: "";
   position: absolute;
@@ -435,9 +434,14 @@ main .mainContent .topBox .owl-carousel a.active {
   border-radius: 25px;
   background-color: #d82128;
 }
-.topBox .owl-carousel a:hover::before {
+/* .topBox .owl-carousel a:hover::before {
   bottom: -4px;
+} */
+
+main .mainContent .table tbody tr:hover {
+  background-color: #f6f6f6 !important;
 }
+
 @media (max-width: 992px) {
   header nav {
     padding-left: 0 !important;
@@ -519,5 +523,24 @@ main .mainContent .topBox .owl-carousel a.active {
 @media (max-width: 576px) {
   main .mainContent .topBox .owl-carousel a {
     font-size: 0.8rem;
+  }
+  main .mainContent .owl-carousel .owl-stage-outer {
+    transform: rotateX(180deg);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .owl-carousel .owl-stage {
+    display: flex;
+    transform: rotateX(180deg) !important;
+  }
+  main .mainContent .topBox .owl-carousel .item {
+    text-align: left;
+    max-width: 160px !important;
+    width: max-content !important;
+  }
+  main .mainContent .topBox .owl-carousel .owl-item {
+    max-width: 160px !important;
+    width: max-content !important;
+    margin-right: 6px;
   }
 }
