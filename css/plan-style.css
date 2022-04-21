@@ -549,8 +549,17 @@ main .mainContent .topBox .owl-carousel a.active {
   }
 
   main .mainContent .accountPlan .accountPlanTop .upgradeBtn {
-    width: 100%;
-    margin-top: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .mainContent .accountPlan .settingsText {
+    margin-bottom: 2rem;
+  }
+  main .mainContent .accountPlan .accountPlanCard {
+    transform: translateY(-125px);
   }
 
   main .mainContent .accountContentTop .planBtn {
@@ -562,6 +571,13 @@ main .mainContent .topBox .owl-carousel a.active {
   main .mainContent .topBox .planBtn {
     width: 100%;
     margin-top: 1rem;
+  }
+  main .mainContent .accountPlan .accountPlanCard {
+    width: 75%;
+    margin: 0 auto;
+  }
+  main .mainContent .accountPlan .accountPlanCard .cardBodyText {
+    margin: 0 auto;
   }
 }
 
