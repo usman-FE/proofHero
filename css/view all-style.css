@@ -379,9 +379,10 @@ main .mainContent .dropdownMenuForm label {
 }
 main .mainContent .dropdownMenuForm input,
 main .mainContent .dropdownMenuForm select {
-  border-color: #d6d7da;
-  color: #8f8f8f;
-  border-radius: 6px;
+  /* border-color: #d6d7da; */
+  border-radius: 0.49rem;
+  background-color: #f0f2f6;
+  border: 0;
   font-weight: 500;
 }
 main .mainContent .dropdownMenuForm input:focus,
