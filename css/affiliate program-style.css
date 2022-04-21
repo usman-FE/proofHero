@@ -378,6 +378,9 @@ main .mainContent .affiliateProgram .receiveBtn:hover {
   br {
     display: none;
   }
+  .copyright-text {
+    font-size: 12px;
+  }
 }
 @media (max-width: 576px) {
   main .mainContent .affiliateProgram .affiliateText {
