@@ -389,6 +389,124 @@ main .mainContent .informational h6 {
   margin-top: 0.4rem;
 }
 
+.informational-svg {
+  margin: 0 auto;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: black;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  transition: all 0.3s linear;
+}
+main .mainContent .informational:hover .informational-svg,
+main .mainContent .informational.active .informational-svg {
+  background-color: #d82128;
+}
+main .mainContent .informational.active p {
+  color: #d82128;
+}
+.informational1-svg {
+  mask-image: url("../imgNew/informational-01.svg");
+  -webkit-mask-image: url("../imgNew/informational-01.svg");
+}
+
+.coupon-svg {
+  mask-image: url("../imgNew/coupon-01.svg");
+  -webkit-mask-image: url("../imgNew/coupon-01.svg");
+}
+.counter-svg {
+  mask-image: url("../imgNew/countdown\ counter\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/countdown\ counter\ light-01.svg");
+}
+.email-svg {
+  mask-image: url("../imgNew/email\ collector-01.svg");
+  -webkit-mask-image: url("../imgNew/email\ collector-01.svg");
+}
+.conversions-svg {
+  mask-image: url("../imgNew/latest\ conversion\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/latest\ conversion\ light-01.svg");
+}
+.conversions-counter-svg {
+  mask-image: url("../imgNew/conversion\ counter\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/conversion\ counter\ light-01.svg");
+}
+.video-svg {
+  mask-image: url("../imgNew/video\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/video\ light-01.svg");
+}
+.social-svg {
+  mask-image: url("../imgNew/social\ share-01.svg");
+  -webkit-mask-image: url("../imgNew/social\ share-01.svg");
+}
+.review-svg {
+  mask-image: url("../imgNew/random\ review\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/random\ review\ light-01.svg");
+}
+.emoji-svg {
+  mask-image: url("../imgNew/emoji\ feedback\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/emoji\ feedback\ light-01.svg");
+}
+.cookie-svg {
+  mask-image: url("../imgNew/cokies\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/cokies\ light-01.svg");
+}
+.score-svg {
+  mask-image: url("../imgNew/score\ feedback\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/score\ feedback\ light-01.svg");
+}
+.request-svg {
+  mask-image: url("../imgNew/request\ collector\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/request\ collector\ light-01.svg");
+}
+.countdown-svg {
+  mask-image: url("../imgNew/countdown\ counter\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/countdown\ counter\ light-01.svg");
+}
+.informational-bar-svg {
+  mask-image: url("../imgNew/informational\ bar-01.svg");
+  -webkit-mask-image: url("../imgNew/informational\ bar-01.svg");
+}
+.image-svg {
+  mask-image: url("../imgNew/image\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/image\ light-01.svg");
+}
+.collector-svg {
+  mask-image: url("../imgNew/collector\ bar\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/collector\ bar\ light-01.svg");
+}
+.coupon-bar-svg {
+  mask-image: url("../imgNew/coupon-bar.svg");
+  -webkit-mask-image: url("../imgNew/coupon-bar.svg");
+}
+.button-bar-svg {
+  mask-image: url("../imgNew/button\ bar\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/button\ bar\ light-01.svg");
+}
+.modal-svg {
+  mask-image: url("../imgNew/modal\ collector\ light-01.svg");
+  -webkit-mask-image: url("../imgNew/modal\ collector\ light-01.svg");
+}
+.modal-two-svg {
+  mask-image: url("../imgNew/modal\ two\ collector-01.svg");
+  -webkit-mask-image: url("../imgNew/modal\ two\ collector-01.svg");
+}
+.cta-svg {
+  mask-image: url("../imgNew/call\ to\ ction-01.svg");
+  -webkit-mask-image: url("../imgNew/call\ to\ ction-01.svg");
+}
+.feedback-svg {
+  mask-image: url("../imgNew/text\ feedback-01.svg");
+  -webkit-mask-image: url("../imgNew/text\ feedback-01.svg");
+}
+.engagement-svg {
+  mask-image: url("../imgNew/engagement\ links-01.svg");
+  -webkit-mask-image: url("../imgNew/engagement\ links-01.svg");
+}
+.html-svg {
+  mask-image: url("../imgNew/Custom\ Html\ notification.svg");
+  -webkit-mask-image: url("../imgNew/Custom\ Html\ notification.svg");
+}
+
 main .mainContent .informational p {
   color: #717273;
   font-size: 0.78rem;
@@ -401,12 +519,13 @@ main .mainContent .informational:hover p {
   color: #d82128;
 }
 
-.active:first-child {
+/* .active:first-child {
   filter: invert(50%) sepia(100%) saturate(3000%) hue-rotate(346deg)
     brightness(82%) contrast(100%);
-}
+} */
 
 .alertBottom {
+  z-index: 99;
   color: black;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08),
     0 4px 6px -2px rgba(0, 0, 0, 0.04);
@@ -522,13 +641,37 @@ main .mainContent .informational:hover p {
 @media (max-width: 768px) {
   main .mainContent .newNotification .textEnd {
     text-align: left;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+  }
+
+  .mob-info {
+    margin-top: 0 !important;
+    margin-bottom: 5rem;
+  }
+  .mob-info-line {
+    position: relative;
+  }
+
+  .mob-info-line::before {
+    content: "";
+    height: 2px;
+    width: 91%;
+    position: absolute;
+    background-color: #f1f1f1;
+    left: 50%;
+    right: 0;
+    top: -2rem;
+    transform: translateX(-50%);
   }
 
   .float-btn {
     position: fixed;
-    bottom: 0%;
-    width: 95%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 333;
+    border-top: 1px solid #d8d8d8;
   }
   .notification-preview {
     position: relative;
