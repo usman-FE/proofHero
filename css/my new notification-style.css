@@ -510,7 +510,7 @@ main .mainContent .accordionButton:not(.collapsed)::before {
   border-radius: 25px;
   background-color: #d82128;
   left: 0;
-  bottom: -5px;
+  bottom: 0px;
 }
 
 .active-accord {
@@ -530,11 +530,27 @@ main .mainContent .accordionButton:not(.collapsed)::before {
 }
 
 main .mainContent .navTabs .tabPane2.active::before {
-  bottom: -5px;
+  bottom: -2.2px;
 }
 
 main .mainContent .tabPane .marginBottom {
   margin-bottom: 0.8rem;
+}
+
+main .mainContent .navTabs .tabsBtn:hover {
+  color: #d82128;
+}
+main .mainContent .navTabs .tabsBtn:hover .statisticsIcon {
+  fill: #d82128 !important;
+}
+
+.form-switch .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+
+.form-switch .form-check-input:focus {
+  border-color: rgb(216 33 40 / 20%);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
 }
 
 main .mainContent .statisticsTabPane,
@@ -664,7 +680,7 @@ main .mainContent .previewsTop .previewPara {
 main .mainContent .previewsTop .previewPara,
 main .mainContent .formTab .previewPara,
 .accordionBody .previewPara {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 0.9rem;
 }
 
@@ -1408,7 +1424,6 @@ main .mainContent .chevronRight {
   }
   main .mainContent .previewsTop {
     border-radius: 0;
-    margin: 0;
   }
 }
 
