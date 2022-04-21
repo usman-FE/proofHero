@@ -102,7 +102,7 @@ button:focus,
 }
 @media (max-width: 578px) {
   .pageContent .text404 {
-    font-size: 10rem;
+    font-size: 9rem;
   }
   .pageContent .somethingText {
     font-size: 2.3rem;
@@ -113,10 +113,18 @@ button:focus,
   .pageContent .helpCenterText {
     margin-left: 1rem;
   }
-}
-
-@media (max-width: 440px) {
+  .pageContent .img404 {
+    max-width: 47%;
+  }
   .pageContent .maxWidth {
     width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 0;
+    text-align: center;
+  }
+  .pageContent .homeBtn,
+  .pageContent .helpCenterText {
+    font-size: 0.8rem;
   }
 }
