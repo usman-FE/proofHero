@@ -570,8 +570,11 @@ main .mainContent .navTabs .tabsBtn .fa-chevron-up {
   font-size: 18px;
   display: none;
 }
-main .mainContent .navTabs .tabsBtn.active {
+main .mainContent .navTabs .tabsBtn.active,
+main .mainContent .navTabs .tabsBtn:hover .statisticsIcon,
+main .mainContent .navTabs .tabsBtn:hover {
   color: #d82128;
+  fill: #d82128;
 }
 main .mainContent .navTabs .tabsBtn.active .fa-chevron-up {
   display: none;
@@ -752,9 +755,9 @@ main .mainContent .dropdownMenuForm .filterText h6 {
 
 main .mainContent .dropdownMenuForm input,
 main .mainContent .dropdownMenuForm select {
-  border-color: #d6d7da;
-  color: #8f8f8f;
-  border-radius: 6px;
+  border-radius: 0.49rem;
+  background-color: #f0f2f6;
+  border: 0;
   font-weight: 500;
 }
 
@@ -1165,8 +1168,13 @@ main .mainContent .text {
 
 .waiting-int {
   background-color: #daf4e6;
+  color: #558b6e;
   border: none !important;
   font-weight: 500;
+  cursor: default !important;
+}
+.waiting-int:hover {
+  color: #558b6e;
 }
 
 .greenDot {
@@ -1183,6 +1191,10 @@ main .mainContent .text {
   color: #8f8f8f;
   background-color: #f1f1f1;
   font-weight: 500;
+  cursor: default !important;
+}
+.pixel-installed:hover {
+  color: #8f8f8f !important;
 }
 
 .dark-text {
