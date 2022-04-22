@@ -419,6 +419,8 @@ main .mainContent .informational.active p {
   -webkit-mask-image: url("../imgNew/countdown\ counter\ light-01.svg");
 }
 .email-svg {
+  width: 3.9rem !important;
+  height: 3.9rem !important;
   mask-image: url("../imgNew/email\ collector-01.svg");
   -webkit-mask-image: url("../imgNew/email\ collector-01.svg");
 }
@@ -503,6 +505,8 @@ main .mainContent .informational.active p {
   -webkit-mask-image: url("../imgNew/engagement\ links-01.svg");
 }
 .html-svg {
+  width: 3rem !important;
+  height: 3rem !important;
   mask-image: url("../imgNew/Custom\ Html\ notification.svg");
   -webkit-mask-image: url("../imgNew/Custom\ Html\ notification.svg");
 }
