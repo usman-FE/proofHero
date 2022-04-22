@@ -10,7 +10,7 @@ mobNavBtn.addEventListener("click", function () {
 const parentEl = document.querySelector(".accordionTopBtn");
 const btnEl = document.querySelectorAll(".accordionBtn");
 
-parentEl.addEventListener("click", function (e) {
+parentEl?.addEventListener("click", function (e) {
   if (!e.target.classList.contains("accordion-button")) return;
   btnEl.forEach((el) => {
     el.classList.remove("active-accord");
@@ -21,3 +21,8 @@ parentEl.addEventListener("click", function (e) {
     }
   });
 });
+
+// Remove owl-drag
+const owl = document.querySelector('.owl-carousel');
+console.log(owl);
+owl.classList.remove('owl-drag');
