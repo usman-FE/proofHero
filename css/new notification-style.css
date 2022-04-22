@@ -567,6 +567,13 @@ main .mainContent .informational:hover p {
   font-size: 1.1rem;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
+
 @media (max-width: 992px) {
   header nav {
     padding-left: 0 !important;

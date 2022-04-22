@@ -366,6 +366,13 @@ main .invitePeople .referralBtn a:hover {
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
+
 @media (max-width: 992px) {
   .mob-nav {
     right: 2%;

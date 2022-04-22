@@ -1218,6 +1218,14 @@ main .mainContent .chevronRight {
   top: 13px;
   display: none;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
+
 @media (max-width: 992px) {
   .mob-nav {
     right: 2%;

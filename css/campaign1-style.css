@@ -1212,6 +1212,12 @@ main .mainContent .text {
   justify-content: center;
   align-items: center;
 }
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
 
 @media (max-width: 992px) {
   header nav {

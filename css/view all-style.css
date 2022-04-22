@@ -503,6 +503,14 @@ main .mainContent .bottomText {
   margin-left: 1rem;
   color: #8f8f8f;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
+
 @media (max-width: 992px) {
   .mob-nav {
     right: 2%;
