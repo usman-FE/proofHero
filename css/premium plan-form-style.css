@@ -396,6 +396,7 @@ main .mainContent .dropdownCountry {
   padding: 0;
   margin: 0;
   overflow-y: scroll;
+  max-height: 14rem;
 }
 
 main .mainContent .dropdownCountry li {
@@ -459,6 +460,11 @@ main .mainContent .premiumPlanForm .tabContent .cardImg {
   position: absolute;
   top: 30%;
   z-index: 0;
+}
+
+.imgFluid {
+  max-width: 18%;
+  height: auto;
 }
 
 main .mainContent .premiumPlanForm .tabContent .inputIcon {
@@ -751,9 +757,36 @@ main .mainContent .dNone {
   }
 }
 
+main .mainContent .dropdownCountry::-webkit-scrollbar {
+  width: 7.4px;
+  background-color: #f3f2f2;
+}
+
+main .mainContent .dropdownCountry::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #b6b6b6;
+}
+
+main .mainContent .dropdownCountry::-webkit-scrollbar-thumb {
+  /* border-radius: 20px; */
+  /* height: 20px; */
+  background-color: #9b9a98;
+  transition: all 0.2s;
+}
+main .mainContent .dropdownCountry::-webkit-scrollbar-thumb:hover {
+  /* border-radius: 20px; */
+  /* height: 20px; */
+  background-color: #f6f6f6;
+}
+
 @media (max-width: 500px) {
   main .mainContent .topText ul li a {
     font-size: 0.7rem;
+  }
+
+  .imgFluid {
+    max-width: 23%;
+    height: auto;
   }
 
   main .mainContent .topText ul li {
