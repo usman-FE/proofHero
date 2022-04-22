@@ -46,6 +46,13 @@ header nav .logo {
   width: 150px;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d82128;
+}
+
 header nav .navbar-collapse .navbarRight {
   display: flex;
   align-items: center;

@@ -4,10 +4,15 @@ const mobNavBtn = document.querySelector(".navbar-toggler");
 const mobNav = document.querySelector(".mob-nav");
 
 mobNavBtn.addEventListener("click", function () {
-  console.log(mobNav);
+  // console.log(mobNav);
   mobNav.classList.toggle("mob-nav-show");
 });
-
+window.addEventListener('click', function (e) {
+  console.log(mobNavBtn);
+  console.log(e.target.closest('.navbar-toggler'));
+  // if (!(mobNav.classList.contains('mob-nav-show')) && e.target != mobNavBtn) return;
+  mobNav.classList.remove("mob-nav-show");
+})
 
 // MY NEW NOTIFICATION TABULAR COMPONENT
 const parentEl = document.querySelector('.accordionTopBtn');
