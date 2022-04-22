@@ -401,7 +401,6 @@ main .mainContent .dropdownCountry {
 
 main .mainContent .dropdownCountry li {
   list-style: none;
-  margin-bottom: 0.5rem;
 }
 
 main .mainContent .dropdownCountry li a {
@@ -410,6 +409,11 @@ main .mainContent .dropdownCountry li a {
   font-size: 15px;
   display: block;
   text-decoration: none;
+  padding: 0.25rem 0;
+  transition: all 0.2s ease-in-out;
+}
+main .mainContent .dropdownCountry li a:hover {
+  background-color: #f6f6f6;
 }
 
 main .mainContent .fa-chevron-down {
@@ -772,7 +776,7 @@ main .mainContent .dropdownCountry::-webkit-scrollbar {
 
 main .mainContent .dropdownCountry::-webkit-scrollbar-track {
   border-radius: 20px;
-  background-color: #b6b6b6;
+  background-color: rgb(248, 248, 248);
 }
 
 main .mainContent .dropdownCountry::-webkit-scrollbar-thumb {
@@ -781,12 +785,6 @@ main .mainContent .dropdownCountry::-webkit-scrollbar-thumb {
   background-color: #9b9a98;
   transition: all 0.2s;
 }
-main .mainContent .dropdownCountry::-webkit-scrollbar-thumb:hover {
-  /* border-radius: 20px; */
-  /* height: 20px; */
-  background-color: #f6f6f6;
-}
-
 @media (max-width: 500px) {
   main .mainContent .topText ul li a {
     font-size: 0.7rem;
