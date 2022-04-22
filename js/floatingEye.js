@@ -1,7 +1,8 @@
 const closeBtn = document.querySelector('.previewCloseBtn');
-const notifyEl = document.querySelector('.notification-preview-box');
+const notifyEl = document.querySelector('.notification-box-parent');
 const floatingEye = document.querySelector('.floating-eye');
 const previewSection = document.querySelector('.previewsTop');
+console.log(notifyEl);
 
 
 

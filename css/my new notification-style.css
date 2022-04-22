@@ -1072,7 +1072,7 @@ main .mainContent .table .text a {
 main .mainContent .basicForm p,
 main .mainContent .formTab p {
   color: #717273;
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 0.9rem;
 }
 
@@ -1245,6 +1245,9 @@ main .mainContent .chevronRight {
     font-weight: 500;
     font-size: 0.8rem;
   }
+  .mob-margin {
+    margin-bottom: 1.3rem;
+  }
 
   header nav {
     padding-left: 0 !important;
@@ -1369,8 +1372,17 @@ main .mainContent .chevronRight {
     background-color: unset;
   }
 
-  .notification-preview-box {
-    width: 90% !important;
+  .notification-box-parent {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0px !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .previewCloseBtn {
+    left: 0.9rem !important;
+    border-color: white;
   }
   /* main .mainContent .navTabs .tabsBtn,
   main .mainContent .accordionButton {
@@ -1434,6 +1446,15 @@ main .mainContent .chevronRight {
   }
 }
 
+@media (max-width: 575px) {
+  .info-icon {
+    margin-right: 0;
+  }
+  main .mainContent .notification .domainText.ms {
+    margin-left: 0.9rem;
+  }
+}
+
 @media (max-width: 500px) {
   main .mainContent .topText ul li a {
     font-size: 0.7rem;
@@ -1471,6 +1492,17 @@ main .mainContent .chevronRight {
     transform: rotateX(180deg);
   }
 }
+.notification-box-parent {
+  position: fixed;
+  display: none;
+  top: 20%;
+  right: 3%;
+  z-index: 9999;
+  padding: 1.6rem;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
 
 .notification-preview-box {
   padding: 2rem;
@@ -1479,13 +1511,8 @@ main .mainContent .chevronRight {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   border-radius: 8px;
-  position: fixed;
-  top: 20%;
-  right: 3%;
-  z-index: 9999;
-  box-shadow: 5px 6px 5px #0000004a;
-  border: 1px solid #d8d8d8;
-  display: none;
+  /* box-shadow: 5px 6px 5px #0000004a; */
+  /* border: 1px solid #d8d8d8; */
 }
 .notification-preview-box .alertBottom {
   max-width: 100%;
@@ -1502,8 +1529,6 @@ main .mainContent .chevronRight {
   font-weight: 600;
   width: 30px;
   height: 30px;
-  top: 8px;
-  right: 20px;
   opacity: 1;
   transition: all 0.25s ease;
   position: absolute;
@@ -1541,5 +1566,11 @@ main .mainContent .chevronRight {
   main .mainContent .navTabs .tabsBtn i,
   main .mainContent .navTabs .statisticsIcon {
     margin-right: 0.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main .mainContent .formTab {
+    padding-bottom: 1rem;
   }
 }

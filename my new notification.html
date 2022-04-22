@@ -1125,6 +1125,12 @@
                                           <option value="">Action 3</option>
                                         </select>
                                       </div>
+                                      <div>
+                                        <p>
+                                          Change the shape of the corners of the
+                                          notification.
+                                        </p>
+                                      </div>
                                     </div>
                                     <div class="col-lg-4">
                                       <div>
@@ -1135,11 +1141,16 @@
                                         >
                                       </div>
                                       <div>
-                                        <select class="form-select formSelect">
-                                          <option value="">Action 1</option>
-                                          <option value="">Action 2</option>
-                                          <option value="">Action 3</option>
-                                        </select>
+                                        <input
+                                          type="number"
+                                          class="form-control settingsFormInput"
+                                        />
+                                      </div>
+                                      <div>
+                                        <p>
+                                          Value from 0 to 5 for the border width
+                                          of the notification.
+                                        </p>
                                       </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -1188,7 +1199,7 @@
                                     </div>
                                   </div>
                                   <div class="row mb">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mob-margin">
                                       <div>
                                         <label
                                           for=""
@@ -1954,6 +1965,12 @@
                                       <option value="">Action 3</option>
                                     </select>
                                   </div>
+                                  <div>
+                                    <p>
+                                      Change the shape of the corners of the
+                                      notification.
+                                    </p>
+                                  </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div>
@@ -1966,6 +1983,12 @@
                                       type="number"
                                       class="form-control settingsFormInput"
                                     />
+                                  </div>
+                                  <div>
+                                    <p>
+                                      Value from 0 to 5 for the border width of
+                                      the notification.
+                                    </p>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -2010,7 +2033,7 @@
                                 </div>
                               </div>
                               <div class="row mb">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 mob-margin">
                                   <div>
                                     <label for="" class="form-label formLabel"
                                       >Entrance Animation</label
@@ -2847,34 +2870,36 @@
     <!-- EYE ICON -->
 
     <!-- PREVIEW Start -->
-    <div class="row mb-4 align-items-center notification-preview-box">
-      <!-- CLOSE BTN -->
-      <button type="button" class="btn previewCloseBtn">
-        <span>X</span>
-      </button>
-      <!-- CLOSE BTN -->
-
-      <div
-        class="notification-preview alert alertBottom alert-warning alert-dismissible fade show"
-        role="alert"
-      >
-        <div class="alertText">
-          <div>
-            <img src="./img/sale.png" alt="" />
-          </div>
-          <div>
-            <h6>Flash sale!</h6>
-            <p>Limited sale until tonight, right now!</p>
-          </div>
-        </div>
-        <button
-          type="button"
-          class="btn-close btnCLose"
-          data-bs-dismiss="alert"
-          aria-label="Close"
-        >
-          <i class="fa-solid fa-xmark"></i>
+    <div class="notification-box-parent">
+      <div class="row align-items-center notification-preview-box">
+        <!-- CLOSE BTN -->
+        <button type="button" class="btn previewCloseBtn">
+          <span>X</span>
         </button>
+        <!-- CLOSE BTN -->
+
+        <div
+          class="notification-preview alert alertBottom alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <div class="alertText">
+            <div>
+              <img src="./img/sale.png" alt="" />
+            </div>
+            <div>
+              <h6>Flash sale!</h6>
+              <p>Limited sale until tonight, right now!</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close btnCLose"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
       </div>
     </div>
     <!-- PREVIEW End -->
