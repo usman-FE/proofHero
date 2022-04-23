@@ -24,5 +24,4 @@ parentEl?.addEventListener("click", function (e) {
 
 // Remove owl-drag
 const owl = document.querySelector('.owl-carousel');
-console.log(owl);
-owl.classList.remove('owl-drag');
+owl?.classList.remove('owl-drag');

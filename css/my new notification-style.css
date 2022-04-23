@@ -1447,7 +1447,7 @@ main .mainContent .chevronRight {
     margin-right: 1rem;
     padding-bottom: 1rem;
     width: 100%;
-    gap: 8vw;
+    gap: 2vw;
   }
   main .mainContent .previewsTop {
     border-radius: 0;
